@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Пополнение баланса</h2>
+    <form method="POST" action="{{ url_for('payment') }}">
+        <div class="form-group">
+            <label for="amount">Сумма (₽):</label>
+            <input type="number" class="form-control" id="amount" name="amount" min="1" required>
+        </div>
+        <button type="submit" class="btn btn-success">Пополнить</button>
+    </form>
+</div>
+{% endblock %}

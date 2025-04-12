@@ -3,36 +3,69 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>{{ title }}</title>
     <style>
-        .form-group {
-            margin-left: 100px;
-            margin-right: 100px;
+        .user-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
-        h2 {
-            margin-left: 100px;
-            margin-right: 100px;
+        .username {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+        }
+        .username:hover {
+            text-decoration: underline;
+         }
+        .balance {
+            font-size: 1.3rem;
+            color: #27ae60;
+            background: #white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .balance:hover {
+            background: #a7ebc3;
+        }
+        .admin-badge {
+            color: #e74c3c;
+        }
+        .nav-button {
+            margin-right: 20px;
         }
     </style>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-light bg-light">
-        <h1>Магазин воздуха</h1>
+<nav class="navbar navbar-light bg-light">
+    <h1>Магазин воздуха</h1>
+    <div class="navbar-text d-flex align-items-center">
         {% if current_user.is_authenticated %}
-            <a class="navbar-brand" href="/logout">{{ current_user.name }}</a>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-primary nav-button">
+                <i class="fas fa-store"></i> Каталог
+            </a>
+            <div class="user-container">
+                <span class="balance" onclick="window.location.href='{{ url_for('payment') }}'">
+                    {{ current_user.balance }} ₽
+                </span>
+                <span class="username {% if current_user.is_admin %}admin-badge{% endif %}"
+                      onclick="window.location.href='{{ url_for('profile') }}'">
+                    {{ current_user.name }}
+                    {% if current_user.is_admin %}<span class="badge badge-warning ml-2">ADMIN</span>{% endif %}
+                </span>
+            </div>
         {% else %}
-            <p>
-            <a class="btn btn-primary " href="/register">Зарегистрироваться</a>
-            <a class="btn btn-success" href="/login">Войти</a>
-            </p>
+            <a href="{{ url_for('index') }}" class="btn btn-outline-primary nav-button">
+                <i class="fas fa-store"></i> Каталог
+            </a>
+            <a href="/login" class="btn btn-primary">Войти</a>
         {% endif %}
-    </nav>
-</header>
+    </div>
+</nav>
 <main>
     {% block content %}{% endblock %}
 </main>

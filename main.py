@@ -132,26 +132,19 @@ def buy(product_id):
     return redirect('/orders')
 
 
-@app.route('/payment', methods=['GET', 'POST'])
-@login_required
-def payment():
-    form = PaymentForm()
-    if form.validate_on_submit():
-        current_user.balance += form.amount.data
-        db_sess.commit()
-        return redirect('/profile')
-    return render_template('payment.html', form=form)
-
-
 @app.route('/admin')
 @login_required
 def admin_panel():
     if not current_user.is_admin:
         abort(403)
+
     db_sess = db_session.create_session()
-    products = db_sess.query(Product).all()
     users = db_sess.query(User).all()
-    return render_template("admin.html", products=products, users=users)
+    products = db_sess.query(Product).all()
+
+    return render_template('admin_panel.html',
+                           users=users,
+                           products=products)
 
 
 @app.route('/orders')
@@ -160,6 +153,30 @@ def orders():
     db_sess = db_session.create_session()
     orders = db_sess.query(Order).filter(Order.user_id == current_user.id).all()
     return render_template("orders.html", orders=orders)
+
+
+@app.route('/profile')
+@login_required
+def profile():
+    return render_template('profile.html', user=current_user)
+
+
+@app.route('/payment', methods=['GET', 'POST'])
+@login_required
+def payment():
+    if request.method == 'POST':
+        amount = float(request.form.get('amount', 0))
+        if amount <= 0:
+            print("Сумма должна быть больше нуля")
+        else:
+            current_user.balance += amount
+            db_sess = db_session.create_session()
+            db_sess.merge(current_user)
+            db_sess.commit()
+            print(f"Баланс пополнен на {amount} ₽")
+            return redirect('/profile')
+
+    return render_template('payment.html')
 
 
 if __name__ == '__main__':
