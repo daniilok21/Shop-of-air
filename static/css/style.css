@@ -1,0 +1,16 @@
+h1 {
+   color: #d22e3a
+   padding-left: 20px;
+}
+h6 {
+   color: #cfd3dd
+}
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffcc00;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}

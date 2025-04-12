@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Каталог товаров</h1>
+<div class="row">
+    {% for product in products %}
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ product.image_url }}" class="card-img-top">
+            <div class="card-body">
+                <h5>{{ product.title }}</h5>
+                <p>Цена: {{ product.price }} руб.</p>
+                {% if current_user.is_authenticated %}
+                <form action="/buy/{{ product.id }}" method="POST">
+                    <input type="number" name="quantity" value="1" min="1">
+                    <button class="btn btn-primary">Купить</button>
+                </form>
+                {% else %}
+                <a href="/login" class="btn btn-secondary">Войдите для покупки</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
