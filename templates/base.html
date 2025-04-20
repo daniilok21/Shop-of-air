@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>{{ title }}</title>
     <style>
-        .user-container {
+        .navbar-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-section {
             display: flex;
             align-items: center;
             gap: 15px;
@@ -17,17 +23,20 @@
             font-weight: 600;
             color: #2c3e50;
             cursor: pointer;
+            margin: 0;
         }
         .username:hover {
             text-decoration: underline;
-         }
+        }
         .balance {
             font-size: 1.3rem;
             color: #27ae60;
-            background: #white;
+            background: white;
             padding: 5px 10px;
             border-radius: 5px;
             cursor: pointer;
+            border: 1px solid #e0e0e0;
+            margin: 0;
         }
         .balance:hover {
             background: #a7ebc3;
@@ -35,35 +44,54 @@
         .admin-badge {
             color: #e74c3c;
         }
-        .nav-button {
-            margin-right: 20px;
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-section {
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
 <body>
 <nav class="navbar navbar-light bg-light">
-    <h1>Магазин воздуха</h1>
-    <div class="navbar-text d-flex align-items-center">
-        {% if current_user.is_authenticated %}
-            <a href="{{ url_for('index') }}" class="btn btn-outline-primary nav-button">
-                <i class="fas fa-store"></i> Каталог
-            </a>
-            <div class="user-container">
-                <span class="balance" onclick="window.location.href='{{ url_for('payment') }}'">
-                    {{ current_user.balance }} ₽
-                </span>
-                <span class="username {% if current_user.is_admin %}admin-badge{% endif %}"
-                      onclick="window.location.href='{{ url_for('profile') }}'">
-                    {{ current_user.name }}
-                    {% if current_user.is_admin %}<span class="badge badge-warning ml-2">ADMIN</span>{% endif %}
-                </span>
-            </div>
-        {% else %}
-            <a href="{{ url_for('index') }}" class="btn btn-outline-primary nav-button">
-                <i class="fas fa-store"></i> Каталог
-            </a>
-            <a href="/login" class="btn btn-primary">Войти</a>
-        {% endif %}
+    <div class="navbar-container">
+        <h1 class="m-0">Магазин воздуха</h1>
+
+        <div class="nav-section">
+            {% if current_user.is_authenticated %}
+                <a href="{{ url_for('index') }}" class="btn btn-outline-primary">
+                    <i class="fas fa-store"></i> Каталог
+                </a>
+                <div class="d-flex align-items-center">
+                    <span class="balance mr-2" onclick="window.location.href='{{ url_for('payment') }}'">
+                        {{ current_user.balance }} ₽
+                    </span>
+                    <span class="username {% if current_user.is_admin %}admin-badge{% endif %}"
+                          onclick="window.location.href='{{ url_for('profile') }}'">
+                        {{ current_user.name }}
+                        {% if current_user.is_admin %}<span class="badge badge-warning ml-2">ADMIN</span>{% endif %}
+                    </span>
+                </div>
+            {% else %}
+                <a href="{{ url_for('index') }}" class="btn btn-outline-primary">
+                    <i class="fas fa-store"></i> Каталог
+                </a>
+                <div class="auth-buttons">
+                    <a class="btn btn-primary" href="/register">Зарегистрироваться</a>
+                    <a class="btn btn-success" href="/login">Войти</a>
+                </div>
+            {% endif %}
+        </div>
     </div>
 </nav>
 <main>
