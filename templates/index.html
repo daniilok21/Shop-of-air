@@ -1,26 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Каталог товаров</h1>
-<div class="row">
-    {% for product in products %}
-    <div class="col-md-4">
-        <div class="card">
-            <img src="{{ product.image_url }}" class="card-img-top">
-            <div class="card-body">
-                <h5>{{ product.title }}</h5>
-                <p>Цена: {{ product.price }} руб.</p>
-                {% if current_user.is_authenticated %}
-                <form action="/buy/{{ product.id }}" method="POST">
-                    <input type="number" name="quantity" value="1" min="1">
-                    <button class="btn btn-primary">Купить</button>
-                </form>
-                {% else %}
-                <a href="/login" class="btn btn-secondary">Войдите для покупки</a>
-                {% endif %}
+<div class="container catalog-container">
+    <h1 class="catalog-title">Каталог товаров</h1>
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-4 mb-4">
+            <div class="card product-card">
+                <img src="{{ product.image_url }}" class="card-img-top product-image" alt="{{ product.title }}">
+                <div class="card-body">
+                    <h5 class="product-title">{{ product.title }}</h5>
+                    <p class="product-price">Цена: {{ product.price }} руб.</p>
+                    {% if current_user.is_authenticated %}
+                    <form action="/buy/{{ product.id }}" method="POST" class="product-form">
+                        <div class="input-group">
+                            <input type="number" name="quantity" value="1" min="1" class="form-control quantity-input">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </form>
+                    {% else %}
+                    <a href="/login" class="btn btn-secondary login-prompt">Войдите для покупки</a>
+                    {% endif %}
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
+
+<style>
+    .catalog-container {
+    margin-left: 20px;
+    padding-right: 20px;
+}
+</style>
 {% endblock %}

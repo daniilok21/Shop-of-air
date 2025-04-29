@@ -5,67 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>{{ title }}</title>
-    <style>
-        .navbar-container {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .nav-section {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .username {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2c3e50;
-            cursor: pointer;
-            margin: 0;
-        }
-        .username:hover {
-            text-decoration: underline;
-        }
-        .balance {
-            font-size: 1.3rem;
-            color: #27ae60;
-            background: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            border: 1px solid #e0e0e0;
-            margin: 0;
-        }
-        .balance:hover {
-            background: #a7ebc3;
-        }
-        .admin-badge {
-            color: #e74c3c;
-        }
-        .auth-buttons {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-        @media (max-width: 768px) {
-            .navbar-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .nav-section {
-                width: 100%;
-                justify-content: space-between;
-                margin-top: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
 <nav class="navbar navbar-light bg-light">
     <div class="navbar-container">
-        <h1 class="m-0">Магазин воздуха</h1>
+        <h1 class="m-2" style="padding-left: 30px;">Магазин воздуха</h1>
 
         <div class="nav-section">
             {% if current_user.is_authenticated %}

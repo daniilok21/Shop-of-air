@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class="auth-container">
     <h1 class="text-center">Авторизация</h1>
-    <form action="" method="post" novalidate>
+    <form action="" method="post" novalidate class="auth-form">
         {{ form.hidden_tag() }}
         <div class="form-group">
             {{ form.email.label(class="form-control-label") }}

@@ -7,6 +7,7 @@ from data.users import User
 from forms.payment import PaymentForm
 from forms.products import ProductForm
 from forms.user import RegisterForm, LoginForm
+import logging
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
@@ -14,6 +15,10 @@ app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 login_manager = LoginManager()
 login_manager.init_app(app)
 
+logging.basicConfig(
+    filename='example.log',
+    format='%(asctime)s %(levelname)s %(name)s %(message)s'
+)
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -25,7 +30,6 @@ def load_user(user_id):
 def register():
     form = RegisterForm()
     if form.validate_on_submit():
-        print(6213215)
         if form.password.data != form.password_again.data:
             return render_template('register.html', form=form, message="Пароли не совпадают")
 
@@ -115,11 +119,9 @@ def buy(product_id):
     if current_user.balance < total:
         return "Недостаточно средств"
 
-    # Обновляем баланс и количество
     current_user.balance -= total
     product.quantity -= quantity
 
-    # Создаем запись о покупке
     order = Order(
         user_id=current_user.id,
         product_id=product.id,
@@ -167,13 +169,13 @@ def payment():
     if request.method == 'POST':
         amount = float(request.form.get('amount', 0))
         if amount <= 0:
-            print("Сумма должна быть больше нуля")
+            logging.info("Сумма должна быть больше нуля")
         else:
             current_user.balance += amount
             db_sess = db_session.create_session()
             db_sess.merge(current_user)
             db_sess.commit()
-            print(f"Баланс пополнен на {amount} ₽")
+            logging.info(f"Пополнение баланса пользователем {current_user.email} на {amount} р.")
             return redirect('/profile')
 
     return render_template('payment.html')
@@ -193,6 +195,6 @@ if __name__ == '__main__':
         admin.set_password("admin123")
         db_sess.add(admin)
         db_sess.commit()
-        print("Создан администратор: admin@example.com / admin123")
+        logging.info("Создан администратор: admin@example.com / admin123")
 
     app.run(port=5000, debug=True)
