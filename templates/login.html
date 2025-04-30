@@ -1,31 +1,52 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="auth-container">
-    <h1 class="text-center">Авторизация</h1>
-    <form action="" method="post" novalidate class="auth-form">
-        {{ form.hidden_tag() }}
-        <div class="form-group">
-            {{ form.email.label(class="form-control-label") }}
-            {{ form.email(class="form-control", type="email") }}
-            {% for error in form.email.errors %}
-                <div class="alert alert-danger mt-2">{{ error }}</div>
-            {% endfor %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Авторизация</h2>
+
+                    <form action="" method="post" novalidate>
+                        {{ form.hidden_tag() }}
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            {{ form.email(class="form-control", id="email", type="email") }}
+                            {% for error in form.email.errors %}
+                                <div class="alert alert-danger mt-2">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            {{ form.password(class="form-control", id="password", type="password") }}
+                            {% for error in form.password.errors %}
+                                <div class="alert alert-danger mt-2">{{ error }}</div>
+                            {% endfor %}
+                        </div>
+
+                        <div class="form-check mb-3">
+                            {{ form.remember_me(class="form-check-input") }}
+                            {{ form.remember_me.label(class="form-check-label") }}
+                        </div>
+
+                        <div class="form-group">
+                            {{ form.submit(class="btn btn-primary btn-block", value="Войти") }}
+                        </div>
+
+                        {% if message %}
+                            <div class="alert alert-danger mt-3">{{ message }}</div>
+                        {% endif %}
+
+                        <div class="text-center mt-3">
+                            <h6>Нет аккаунта? <a href="{{ url_for('register') }}">Зарегистрироваться</a></h6>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            {{ form.password.label(class="form-control-label") }}
-            {{ form.password(class="form-control", type="password") }}
-            {% for error in form.password.errors %}
-                <div class="alert alert-danger mt-2">{{ error }}</div>
-            {% endfor %}
-        </div>
-        <div class="form-check mb-3">
-            {{ form.remember_me(class="form-check-input") }}
-            {{ form.remember_me.label(class="form-check-label") }}
-        </div>
-        {{ form.submit(class="btn btn-primary") }}
-        {% if message %}
-            <div class="alert alert-danger mt-3">{{ message }}</div>
-        {% endif %}
-    </form>
+    </div>
+</div>
 {% endblock %}

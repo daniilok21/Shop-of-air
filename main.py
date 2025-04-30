@@ -192,6 +192,7 @@ if __name__ == '__main__':
             email="admin@example.com",
             is_admin=True
         )
+
         admin.set_password("admin123")
         db_sess.add(admin)
         db_sess.commit()

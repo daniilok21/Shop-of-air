@@ -4,15 +4,15 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card mt-4">  <!-- Добавлена карточка с рамкой -->
-                <div class="card-body">  <!-- Внутренний контейнер -->
+            <div class="card mt-4">
+                <div class="card-body">
                     <h2 class="card-title text-center">Регистрация</h2>
 
                     <form action="" method="post" novalidate>
                         {{ form.hidden_tag() }}
 
                         <div class="form-group">
-                            <label for="email">Login / email</label>
+                            <label for="email">Email</label>
                             {{ form.email(class="form-control", id="email") }}
                             {% for error in form.email.errors %}
                                 <div class="alert alert-danger mt-2">{{ error }}</div>
@@ -20,7 +20,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label for="password">Пароль</label>
                             {{ form.password(class="form-control", id="password") }}
                             {% for error in form.password.errors %}
                                 <div class="alert alert-danger mt-2">{{ error }}</div>
@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password_again">Repeat password</label>
+                            <label for="password_again">Повторите пароль</label>
                             {{ form.password_again(class="form-control", id="password_again") }}
                             {% for error in form.password_again.errors %}
                                 <div class="alert alert-danger mt-2">{{ error }}</div>
@@ -36,7 +36,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="surname">Surname</label>
+                            <label for="surname">Фамилия</label>
                             {{ form.surname(class="form-control", id="surname") }}
                             {% for error in form.surname.errors %}
                                 <div class="alert alert-danger mt-2">{{ error }}</div>
@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">Имя</label>
                             {{ form.name(class="form-control", id="name") }}
                             {% for error in form.name.errors %}
                                 <div class="alert alert-danger mt-2">{{ error }}</div>
@@ -52,11 +52,11 @@
                         </div>
 
                         <div class="form-group">
-                            {{ form.submit(class="btn btn-primary btn-block", value="Submit") }}
+                            {{ form.submit(class="btn btn-primary btn-block", value="Зарегистрироваться") }}
                         </div>
 
                         <div class="text-center mt-3">
-                            <small>Уже есть аккаунт? <a href="{{ url_for('login') }}">Войти</a></small>
+                            <h6>Уже есть аккаунт? <a href="{{ url_for('login') }}">Войти</a></h6>
                         </div>
                     </form>
                 </div>
