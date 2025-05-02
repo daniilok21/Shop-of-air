@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request, abort, url_for
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
+from sqlalchemy import delete
 from data import db_session
 from data.orders import Order
 from data.products import Product
@@ -27,7 +28,7 @@ logging.basicConfig(
 @login_manager.user_loader
 def load_user(user_id):
     db_sess = db_session.create_session()
-    return db_sess.query(User).get(user_id)
+    return db_sess.get(User, user_id)
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -83,7 +84,9 @@ def index():
 @app.route('/product/<int:id>')
 def product(id):
     db_sess = db_session.create_session()
-    product = db_sess.query(Product).get(id)
+    product = db_sess.get(Product, id)
+    if not product:
+        abort(404)
     return render_template("product.html", product=product)
 
 
@@ -91,7 +94,7 @@ def product(id):
 @login_required
 def buy(product_id):
     db_sess = db_session.create_session()
-    product = db_sess.query(Product).get(product_id)
+    product = db_sess.get(Product, product_id)
     quantity = int(request.form.get('quantity', 1))
 
     if product.quantity < quantity:
@@ -209,44 +212,73 @@ def add_product():
     return render_template('add_product.html', form=form)
 
 
-@app.route('/admin/edit_product/<int:id>', methods=['GET', 'POST'])
+@app.route('/admin/product/<int:id>/edit', methods=['GET', 'POST'])
 @login_required
 def edit_product(id):
     if not current_user.is_admin:
         abort(403)
 
     db_sess = db_session.create_session()
-    product = db_sess.query(Product).get(id)
-    if not product:
-        abort(404)
+    try:
+        # Получаем товар современным способом
+        product = db_sess.get(Product, id)
+        if not product:
+            logging.warning(f"Попытка редактирования несуществующего товара ID {id}")
+            abort(404)
 
-    form = ProductForm(obj=product)
-    if form.validate_on_submit():
-        product.title = form.title.data
-        product.description = form.description.data
-        product.price = form.price.data
-        product.quantity = form.quantity.data
-        product.image_url = form.image_url.data
-        product.category = form.category.data
-        db_sess.commit()
-        logging.info('Товар успешно обновлен!')
-        return redirect(url_for('admin_panel'))
+        form = ProductForm(obj=product)
 
-    return render_template('add_product.html', form=form, is_edit=True)
+        if form.validate_on_submit():
+            # Обновляем данные товара
+            form.populate_obj(product)
+
+            # Обработка загрузки нового изображения
+            if 'image' in request.files:
+                file = request.files['image']
+                if file and file.filename != '' and allowed_file(file.filename):
+                    filename = secure_filename(file.filename)
+                    os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+                    file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                    product.image_url = f'uploads/{filename}'
+
+            db_sess.commit()
+            logging.info(f"Товар ID {id} успешно обновлен")
+            return redirect(url_for('admin_panel'))
+
+        return render_template('edit_product.html', form=form)
+
+    except Exception as e:
+        db_sess.rollback()
+        logging.error(f"Ошибка при редактировании товара ID {id}: {str(e)}")
+        abort(500)
+
+    finally:
+        db_sess.close()
 
 
-@app.route('/admin/delete_product/<int:id>')
+@app.route('/admin/product/<int:id>/delete', methods=['POST'])
 @login_required
 def delete_product(id):
     if not current_user.is_admin:
         abort(403)
 
     db_sess = db_session.create_session()
-    product = db_sess.query(Product).get(id)
-    if product:
+    try:
+        product = db_sess.get(Product, id)
+        if not product:
+            logging.warning(f"Удаления несуществующего товара {id}")
+            return redirect(url_for('admin_panel'))
+        db_sess.execute(delete(Order).where(Order.product_id == id))
         db_sess.delete(product)
         db_sess.commit()
-        logging.info('Товар удален')
+        logging.info(f"Товар {product.title} {id} удален")
+        db_sess.close()
+
+    except Exception as e:
+        db_sess.rollback()
+        logging.error(f"Ошибка при удалении товара {str(e)} {id}")
+        db_sess.close()
+
     return redirect(url_for('admin_panel'))
 
 

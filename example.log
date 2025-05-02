@@ -1364,3 +1364,279 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-
 2025-05-02 11:49:14,118 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:49:14] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 2025-05-02 11:49:18,801 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:49:18] "GET /admin HTTP/1.1" 200 -
 2025-05-02 11:49:18,842 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:49:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:53:51,931 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:53:51] "GET /admin HTTP/1.1" 200 -
+2025-05-02 11:53:51,969 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:53:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:54:30,555 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:54:30] "GET /admin HTTP/1.1" 200 -
+2025-05-02 11:54:30,589 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:54:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:56:04,807 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:04] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+2025-05-02 11:56:04,859 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:04] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:56:04,860 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:04] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 11:56:04,886 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:04] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png&s=6vuY0x52IlOLNdiejoCV HTTP/1.1[0m" 304 -
+2025-05-02 11:56:04,940 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:04] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-02 11:56:14,093 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:14] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+2025-05-02 11:56:14,145 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:14] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:56:14,146 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:14] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 11:56:14,178 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:14] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png&s=6vuY0x52IlOLNdiejoCV HTTP/1.1[0m" 304 -
+2025-05-02 11:56:14,225 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:14] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-02 11:56:19,728 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:19] "GET /admin HTTP/1.1" 200 -
+2025-05-02 11:56:19,768 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:56:30,304 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:30] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+2025-05-02 11:56:30,353 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:56:30,355 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 11:56:30,377 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png&s=6vuY0x52IlOLNdiejoCV HTTP/1.1[0m" 304 -
+2025-05-02 11:56:30,434 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-02 11:56:36,190 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-02 11:56:36,190 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 11:56:36,194 INFO werkzeug  * Restarting with stat
+2025-05-02 11:56:37,488 WARNING werkzeug  * Debugger is active!
+2025-05-02 11:56:37,499 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 11:56:37,677 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:37] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+2025-05-02 11:56:37,856 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:37] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 11:56:37,856 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:37] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:56:37,902 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:37] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=9hDy8ehxXAovTLHPyKsy HTTP/1.1" 200 -
+2025-05-02 11:56:37,953 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:56:37] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-02 11:58:30,676 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:58:30] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+2025-05-02 11:58:30,727 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:58:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 11:58:30,728 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:58:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 11:58:30,747 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:58:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png&s=9hDy8ehxXAovTLHPyKsy HTTP/1.1[0m" 304 -
+2025-05-02 11:58:30,800 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:58:30] "[36mGET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-02 11:58:52,246 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:58:52] "GET /admin HTTP/1.1" 200 -
+2025-05-02 11:58:52,295 INFO werkzeug 127.0.0.1 - - [02/May/2025 11:58:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:02:07,446 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:02:07] "GET /admin/edit_product/3 HTTP/1.1" 200 -
+2025-05-02 12:02:07,498 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:02:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:02:09,988 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:02:09] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:02:10,026 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:02:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:04:30,532 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:04:30,651 INFO werkzeug  * Restarting with stat
+2025-05-02 12:04:32,021 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:04:32,036 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:05:28,567 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:05:28,695 INFO werkzeug  * Restarting with stat
+2025-05-02 12:05:30,078 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:05:30,089 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:05:31,815 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:05:31] "[31m[1mPOST /admin/delete_product/3 HTTP/1.1[0m" 405 -
+2025-05-02 12:06:01,201 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:06:01,320 INFO werkzeug  * Restarting with stat
+2025-05-02 12:06:02,515 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:06:02,524 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:06:03,255 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:06:03] "[33mPOST /admin/delete_product/3 HTTP/1.1[0m" 404 -
+2025-05-02 12:06:11,412 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:06:11,540 INFO werkzeug  * Restarting with stat
+2025-05-02 12:06:12,849 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:06:12,859 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:06:12,971 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:06:12] "[33mPOST /admin/delete_product/3 HTTP/1.1[0m" 404 -
+2025-05-02 12:07:05,784 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:07:05,913 INFO werkzeug  * Restarting with stat
+2025-05-02 12:07:07,266 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:07:07,277 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:07:07,429 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:07] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:07:07,575 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:08,095 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:08] "GET /admin/product/3/edit HTTP/1.1" 200 -
+2025-05-02 12:07:08,138 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:11,524 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:11] "POST /admin/product/3/edit HTTP/1.1" 200 -
+2025-05-02 12:07:11,594 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:13,867 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:13] "POST /admin/product/3/edit HTTP/1.1" 200 -
+2025-05-02 12:07:13,932 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:14,687 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:14] "POST /admin/product/3/edit HTTP/1.1" 200 -
+2025-05-02 12:07:14,751 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:16,990 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:16] "GET / HTTP/1.1" 200 -
+2025-05-02 12:07:17,031 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:17,032 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:17] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 12:07:17,033 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:17] "[36mGET /static/uploads/BB1l4Wpe_1.jpg HTTP/1.1[0m" 304 -
+2025-05-02 12:07:17,061 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:17] "[36mGET /static/uploads/33929066421_77862c3f93_b.jpg HTTP/1.1[0m" 304 -
+2025-05-02 12:07:22,517 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:22] "[32mPOST /buy/3 HTTP/1.1[0m" 302 -
+2025-05-02 12:07:22,569 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:22] "[35m[1mGET /orders HTTP/1.1[0m" 500 -
+2025-05-02 12:07:22,635 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:22] "[36mGET /orders?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:22,636 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:22] "[36mGET /orders?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 12:07:22,676 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:22] "GET /orders?__debugger__=yes&cmd=resource&f=console.png&s=Kfn10YVQmvGP37G0XVr9 HTTP/1.1" 200 -
+2025-05-02 12:07:25,313 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:25] "GET /profile HTTP/1.1" 200 -
+2025-05-02 12:07:25,354 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:26,493 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:26] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:07:26,542 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:28,163 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:28] "GET /admin/product/3/edit HTTP/1.1" 200 -
+2025-05-02 12:07:28,210 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:31,821 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:31] "POST /admin/product/3/edit HTTP/1.1" 200 -
+2025-05-02 12:07:31,888 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:36,670 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:36] "POST /admin/product/3/edit HTTP/1.1" 200 -
+2025-05-02 12:07:36,738 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:38,437 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:38] "GET / HTTP/1.1" 200 -
+2025-05-02 12:07:38,486 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:07:38,488 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:38] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 12:07:38,488 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:38] "[36mGET /static/uploads/BB1l4Wpe_1.jpg HTTP/1.1[0m" 304 -
+2025-05-02 12:07:38,506 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:07:38] "[36mGET /static/uploads/33929066421_77862c3f93_b.jpg HTTP/1.1[0m" 304 -
+2025-05-02 12:08:00,196 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-02 12:08:00,197 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 12:08:00,200 INFO werkzeug  * Restarting with stat
+2025-05-02 12:08:01,518 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:08:01,531 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:08:01,666 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:01] "GET /profile HTTP/1.1" 200 -
+2025-05-02 12:08:01,802 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:08:03,024 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:03] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:08:03,061 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:08:07,260 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:07] "[35m[1mPOST /admin/product/3/delete HTTP/1.1[0m" 500 -
+2025-05-02 12:08:07,314 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:07] "GET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-02 12:08:07,315 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:07] "GET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-02 12:08:07,355 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:07] "GET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=console.png&s=surkjJUzSkFvnqT94e9G HTTP/1.1" 200 -
+2025-05-02 12:08:07,387 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:08:07] "GET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-02 12:10:30,800 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:10:30,921 INFO werkzeug  * Restarting with stat
+2025-05-02 12:10:32,327 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:10:32,337 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:11:21,714 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:11:21,840 INFO werkzeug  * Restarting with stat
+2025-05-02 12:14:31,199 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-02 12:14:31,200 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 12:14:31,205 INFO werkzeug  * Restarting with stat
+2025-05-02 12:14:32,459 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:14:32,470 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:14:32,611 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:32] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:14:32,748 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:14:34,882 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:34] "[35m[1mPOST /admin/product/3/delete HTTP/1.1[0m" 500 -
+2025-05-02 12:14:34,948 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:34] "[36mGET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:14:34,950 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:34] "[36mGET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 12:14:34,978 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:34] "GET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=console.png&s=l0lKOkKOehTcWeN5NTWZ HTTP/1.1" 200 -
+2025-05-02 12:14:35,074 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:35] "[36mGET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-02 12:14:42,585 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:14:42,699 INFO werkzeug  * Restarting with stat
+2025-05-02 12:14:43,950 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:14:43,961 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:14:44,417 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:44] "[35m[1mPOST /admin/product/3/delete HTTP/1.1[0m" 500 -
+2025-05-02 12:14:44,589 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:44] "[36mGET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 12:14:44,591 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:44] "[36mGET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:14:44,619 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:44] "GET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=console.png&s=lOKBcEUKUb1QsekZW0b1 HTTP/1.1" 200 -
+2025-05-02 12:14:44,643 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:14:44] "[36mGET /admin/product/3/delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-02 12:15:23,604 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:15:23,706 INFO werkzeug  * Restarting with stat
+2025-05-02 12:15:25,030 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:15:25,040 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:15:46,087 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:15:46,199 INFO werkzeug  * Restarting with stat
+2025-05-02 12:15:47,482 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:15:47,493 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:16:56,631 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:16:56,741 INFO werkzeug  * Restarting with stat
+2025-05-02 12:16:58,063 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:16:58,074 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:18:37,848 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:18:37,957 INFO werkzeug  * Restarting with stat
+2025-05-02 12:18:39,364 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:18:39,375 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:18:40,050 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:40] "[32mPOST /admin/product/3/delete HTTP/1.1[0m" 302 -
+2025-05-02 12:18:40,091 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:40] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:18:40,223 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:18:45,193 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:45] "[32mPOST /admin/product/2/delete HTTP/1.1[0m" 302 -
+2025-05-02 12:18:45,214 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:45] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:18:45,261 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:18:46,668 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:46] "GET / HTTP/1.1" 200 -
+2025-05-02 12:18:46,720 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:18:46,725 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:18:46] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 12:23:48,231 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:23:48,351 INFO werkzeug  * Restarting with stat
+2025-05-02 12:23:49,769 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:23:49,779 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:23:56,185 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:23:56] "GET /profile HTTP/1.1" 200 -
+2025-05-02 12:23:56,320 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:23:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:23:57,338 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:23:57] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:23:57,386 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:23:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:23:58,631 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:23:58] "GET /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 12:23:58,686 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:23:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:24:02,273 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:24:02] "POST /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 12:24:02,338 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:24:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:24:09,756 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-02 12:24:09,757 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 12:24:09,759 INFO werkzeug  * Restarting with stat
+2025-05-02 12:24:11,027 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:24:11,038 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:24:13,155 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:24:13] "POST /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 12:24:13,307 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:24:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:25:34,383 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:25:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-02 12:28:33,920 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-02 12:28:34,043 INFO werkzeug  * Restarting with stat
+2025-05-02 12:32:00,041 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-02 12:32:00,042 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 12:32:00,045 INFO werkzeug  * Restarting with stat
+2025-05-02 12:32:01,303 WARNING werkzeug  * Debugger is active!
+2025-05-02 12:32:01,314 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 12:32:03,842 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:03] "GET / HTTP/1.1" 200 -
+2025-05-02 12:32:04,007 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:32:04,009 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:04] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 12:32:04,401 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:04] "GET /profile HTTP/1.1" 200 -
+2025-05-02 12:32:04,448 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:32:05,400 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:05] "GET /admin HTTP/1.1" 200 -
+2025-05-02 12:32:05,449 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:32:06,646 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:06] "GET /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 12:32:06,702 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:32:09,740 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:09] "POST /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 12:32:09,812 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:32:12,522 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:12] "GET / HTTP/1.1" 200 -
+2025-05-02 12:32:12,561 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:32:12,562 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:12] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 12:32:15,264 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:15] "GET / HTTP/1.1" 200 -
+2025-05-02 12:32:15,299 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:32:15,301 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:32:15] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 12:41:35,291 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:41:35] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-02 12:41:35,339 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:41:35] "[35m[1mGET /orders HTTP/1.1[0m" 500 -
+2025-05-02 12:41:35,405 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:41:35] "[36mGET /orders?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 12:41:35,408 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:41:35] "[36mGET /orders?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 12:41:35,433 INFO werkzeug 127.0.0.1 - - [02/May/2025 12:41:35] "GET /orders?__debugger__=yes&cmd=resource&f=console.png&s=VtVpmrzhQ42TLlO0pm0P HTTP/1.1" 200 -
+2025-05-02 13:04:43,028 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:43] "GET /profile HTTP/1.1" 200 -
+2025-05-02 13:04:43,085 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 13:04:44,049 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:44] "GET /admin HTTP/1.1" 200 -
+2025-05-02 13:04:44,104 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 13:04:45,333 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:45] "GET /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 13:04:45,389 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 13:04:48,300 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:48] "POST /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 13:04:48,368 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 13:04:49,277 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:49] "POST /admin/product/1/edit HTTP/1.1" 200 -
+2025-05-02 13:04:49,345 INFO werkzeug 127.0.0.1 - - [02/May/2025 13:04:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:27:35,238 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-02 16:27:35,238 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-02 16:27:35,242 INFO werkzeug  * Restarting with stat
+2025-05-02 16:27:36,381 WARNING werkzeug  * Debugger is active!
+2025-05-02 16:27:36,394 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-02 16:27:39,432 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:39] "[31m[1mPOST /admin/product/1/edit HTTP/1.1[0m" 401 -
+2025-05-02 16:27:39,642 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-02 16:27:53,871 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:53] "GET / HTTP/1.1" 200 -
+2025-05-02 16:27:53,997 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:27:54,014 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:54] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 16:27:56,293 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:56] "GET /login HTTP/1.1" 200 -
+2025-05-02 16:27:56,342 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:27:58,000 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-02 16:27:58,032 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:58] "GET / HTTP/1.1" 200 -
+2025-05-02 16:27:58,087 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:27:58,093 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:27:58] "[36mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 304 -
+2025-05-02 16:28:56,130 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:28:56] "GET /profile HTTP/1.1" 200 -
+2025-05-02 16:28:56,191 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:28:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:28:59,090 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:28:59] "GET /admin HTTP/1.1" 200 -
+2025-05-02 16:28:59,147 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:28:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:29:01,506 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:29:01] "GET /admin/add_product HTTP/1.1" 200 -
+2025-05-02 16:29:01,566 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:29:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:29:32,578 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:29:32] "GET / HTTP/1.1" 200 -
+2025-05-02 16:29:32,631 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:29:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:29:32,631 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:29:32] "[33mGET /static/uploads/b1ed7521-3306-5438-a493-618234e4c366.jpeg HTTP/1.1[0m" 404 -
+2025-05-02 16:34:24,035 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:34:24] "GET /profile HTTP/1.1" 200 -
+2025-05-02 16:34:24,085 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:34:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:34:25,666 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:34:25] "GET /admin HTTP/1.1" 200 -
+2025-05-02 16:34:25,724 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:34:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:34:45,746 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:34:45] "[32mPOST /admin/product/1/delete HTTP/1.1[0m" 302 -
+2025-05-02 16:34:45,768 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:34:45] "GET /admin HTTP/1.1" 200 -
+2025-05-02 16:34:45,812 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:34:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 16:55:41,886 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:55:41] "GET /admin/add_product HTTP/1.1" 200 -
+2025-05-02 16:55:41,944 INFO werkzeug 127.0.0.1 - - [02/May/2025 16:55:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 17:07:32,501 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:07:32] "[32mPOST /admin/add_product HTTP/1.1[0m" 302 -
+2025-05-02 17:07:32,559 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:07:32] "GET /admin HTTP/1.1" 200 -
+2025-05-02 17:07:32,617 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:07:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 17:07:34,467 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:07:34] "GET / HTTP/1.1" 200 -
+2025-05-02 17:07:34,514 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:07:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-02 17:07:34,515 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:07:34] "GET /static/uploads/68b0a37e-b60d-5cfd-af74-2ea2a9c30dd4.jpeg HTTP/1.1" 200 -
+2025-05-02 17:08:03,572 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:08:03] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-02 17:08:03,628 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:08:03] "[35m[1mGET /orders HTTP/1.1[0m" 500 -
+2025-05-02 17:08:03,683 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:08:03] "[36mGET /orders?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-02 17:08:03,684 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:08:03] "[36mGET /orders?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-02 17:08:03,761 INFO werkzeug 127.0.0.1 - - [02/May/2025 17:08:03] "GET /orders?__debugger__=yes&cmd=resource&f=console.png&s=9FljPVVikC9EWcn02EaI HTTP/1.1" 200 -
