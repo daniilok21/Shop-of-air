@@ -1,12 +1,19 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, TextAreaField, FloatField, IntegerField, SubmitField
-from wtforms.validators import DataRequired
-
+from flask_wtf.file import FileField, FileAllowed, FileRequired
+from wtforms import StringField, TextAreaField, FloatField, IntegerField, SelectField, SubmitField
+from wtforms.validators import DataRequired, NumberRange
 
 class ProductForm(FlaskForm):
-    title = StringField('Название', validators=[DataRequired()])
+    title = StringField('Название товара', validators=[DataRequired()])
     description = TextAreaField('Описание')
-    price = FloatField('Цена', validators=[DataRequired()])
-    quantity = IntegerField('Количество', default=0)
-    image_url = StringField('Ссылка на изображение')
-    submit = SubmitField('Сохранить')
+    price = FloatField('Цена', validators=[DataRequired(), NumberRange(min=0.01)])
+    quantity = IntegerField('Количество', validators=[NumberRange(min=0)])
+    image = FileField('Изображение товара', validators=[
+        FileRequired(),
+        FileAllowed(['jpg', 'jpeg', 'png', 'gif'], 'Только изображения!')
+    ])
+    category = SelectField('Категория', choices=[
+        ('air', 'Воздух'),
+        ('other', 'Другое')
+    ], validators=[DataRequired()])
+    submit = SubmitField('Добавить товар')

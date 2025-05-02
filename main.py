@@ -7,10 +7,14 @@ from data.users import User
 from forms.payment import PaymentForm
 from forms.products import ProductForm
 from forms.user import RegisterForm, LoginForm
+from werkzeug.utils import secure_filename
+import os
 import logging
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
+app.config['UPLOAD_FOLDER'] = 'static/uploads'
+app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'gif'}
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -81,27 +85,6 @@ def product(id):
     db_sess = db_session.create_session()
     product = db_sess.query(Product).get(id)
     return render_template("product.html", product=product)
-
-
-@app.route('/add_product', methods=['GET', 'POST'])
-@login_required
-def add_product():
-    if not current_user.is_admin:
-        abort(403)
-    form = ProductForm()
-    if form.validate_on_submit():
-        db_sess = db_session.create_session()
-        product = Product(
-            title=form.title.data,
-            description=form.description.data,
-            price=form.price.data,
-            quantity=form.quantity.data,
-            image_url=form.image_url.data
-        )
-        db_sess.add(product)
-        db_sess.commit()
-        return redirect('/')
-    return render_template('edit_product.html', form=form)
 
 
 @app.route('/buy/<int:product_id>', methods=['POST'])
@@ -179,6 +162,92 @@ def payment():
             return redirect('/profile')
 
     return render_template('payment.html')
+
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
+
+
+@app.route('/admin/add_product', methods=['GET', 'POST'])
+@login_required
+def add_product():
+    if not current_user.is_admin:
+        abort(403)
+
+    form = ProductForm()
+    if form.validate_on_submit():
+        db_sess = db_session.create_session()
+
+        image_path = None
+        if 'image' in request.files:
+            file = request.files['image']
+            if file and file.filename != '' and allowed_file(file.filename):
+                filename = secure_filename(file.filename)
+                os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+                image_path = f'uploads/{filename}'
+
+        product = Product(
+            title=form.title.data,
+            description=form.description.data,
+            price=form.price.data,
+            quantity=form.quantity.data,
+            image_url=image_path,
+            category=form.category.data
+        )
+
+        db_sess.add(product)
+        db_sess.commit()
+        logging.info(f'Товар "{product.title}" успешно добавлен!')
+        return redirect(url_for('admin_panel'))
+
+    form.category.choices = [
+        ('air', 'Воздух'),
+        ('other', 'Другое')
+    ]
+
+    return render_template('add_product.html', form=form)
+
+
+@app.route('/admin/edit_product/<int:id>', methods=['GET', 'POST'])
+@login_required
+def edit_product(id):
+    if not current_user.is_admin:
+        abort(403)
+
+    db_sess = db_session.create_session()
+    product = db_sess.query(Product).get(id)
+    if not product:
+        abort(404)
+
+    form = ProductForm(obj=product)
+    if form.validate_on_submit():
+        product.title = form.title.data
+        product.description = form.description.data
+        product.price = form.price.data
+        product.quantity = form.quantity.data
+        product.image_url = form.image_url.data
+        product.category = form.category.data
+        db_sess.commit()
+        logging.info('Товар успешно обновлен!')
+        return redirect(url_for('admin_panel'))
+
+    return render_template('add_product.html', form=form, is_edit=True)
+
+
+@app.route('/admin/delete_product/<int:id>')
+@login_required
+def delete_product(id):
+    if not current_user.is_admin:
+        abort(403)
+
+    db_sess = db_session.create_session()
+    product = db_sess.query(Product).get(id)
+    if product:
+        db_sess.delete(product)
+        db_sess.commit()
+        logging.info('Товар удален')
+    return redirect(url_for('admin_panel'))
 
 
 if __name__ == '__main__':

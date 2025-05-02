@@ -1,28 +1,62 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container catalog-container">
-    <h1 class="catalog-title">Каталог товаров</h1>
+<div class="container py-4">
+    <h1 class="text-center mb-4">Каталог товаров</h1>
+
+    {% if not products %}
+    <div class="alert alert-info text-center">
+        Товары отсутствуют. Зайдите позже!
+    </div>
+    {% endif %}
+
     <div class="row">
         {% for product in products %}
-        <div class="col-md-4 mb-4">
-            <div class="card product-card">
-                <img src="{{ product.image_url }}" class="card-img-top product-image" alt="{{ product.title }}">
-                <div class="card-body">
-                    <h5 class="product-title">{{ product.title }}</h5>
-                    <p class="product-price">Цена: {{ product.price }} руб.</p>
-                    {% if current_user.is_authenticated %}
-                    <form action="/buy/{{ product.id }}" method="POST" class="product-form">
-                        <div class="input-group">
-                            <input type="number" name="quantity" value="1" min="1" class="form-control quantity-input">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary buy-button">Купить</button>
-                            </div>
-                        </div>
-                    </form>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100 shadow-sm">
+                <!-- Изображение товара -->
+                <div class="product-image-container">
+                    {% if product.image_url %}
+                    <img src="{{ url_for('static', filename=product.image_url) }}"
+                         class="card-img-top img-fluid p-3"
+                         alt="{{ product.title }}"
+                         style="max-height: 250px; object-fit: contain;">
                     {% else %}
-                    <a href="/login" class="btn btn-secondary login-prompt">Войдите для покупки</a>
+                    <div class="no-image-placeholder d-flex align-items-center justify-content-center">
+                        <i class="fas fa-image fa-5x text-muted"></i>
+                    </div>
                     {% endif %}
+                </div>
+
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">{{ product.title }}</h5>
+
+                    {% if product.description %}
+                    <p class="card-text text-muted mb-2">{{ product.description|truncate(100) }}</p>
+                    {% endif %}
+
+                    <div class="mt-auto">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="h5 text-primary">{{ product.price }} ₽</span>
+                            <small class="text-muted">Осталось: {{ product.quantity }} шт.</small>
+                        </div>
+
+                        {% if current_user.is_authenticated %}
+                        <form action="{{ url_for('buy', product_id=product.id) }}" method="POST">
+                            <div class="input-group">
+                                <input type="number" name="quantity" value="1" min="1"
+                                       max="{{ product.quantity }}" class="form-control">
+                                <button class="btn btn-success" {% if product.quantity < 1 %}disabled{% endif %}>
+                                    <i class="fas fa-shopping-cart"></i> Купить
+                                </button>
+                            </div>
+                        </form>
+                        {% else %}
+                        <a href="{{ url_for('login') }}" class="btn btn-outline-primary btn-block">
+                            Войдите для покупки
+                        </a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -31,9 +65,33 @@
 </div>
 
 <style>
-    .catalog-container {
-    margin-left: 20px;
-    padding-right: 20px;
-}
+    .product-image-container {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+        overflow: hidden;
+    }
+
+    .no-image-placeholder {
+        height: 100%;
+        width: 100%;
+        background-color: #e9ecef;
+    }
+
+    .card {
+        transition: transform 0.2s;
+        border-radius: 10px;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .quantity-input {
+        max-width: 70px;
+    }
 </style>
 {% endblock %}

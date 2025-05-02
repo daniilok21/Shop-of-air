@@ -1,15 +1,17 @@
-import sqlalchemy
-from sqlalchemy import orm
 from data.db_session import SqlAlchemyBase
+import sqlalchemy as sa
+from sqlalchemy import orm
 
 
 class Product(SqlAlchemyBase):
     __tablename__ = 'products'
 
-    id = sqlalchemy.Column(sqlalchemy.Integer, primary_key=True, autoincrement=True)
-    title = sqlalchemy.Column(sqlalchemy.String, nullable=False)
-    description = sqlalchemy.Column(sqlalchemy.Text)
-    price = sqlalchemy.Column(sqlalchemy.Float, nullable=False)
-    quantity = sqlalchemy.Column(sqlalchemy.Integer, default=0)
-    image_url = sqlalchemy.Column(sqlalchemy.String)
-    is_available = sqlalchemy.Column(sqlalchemy.Boolean, default=True)
+    id = sa.Column(sa.Integer, primary_key=True, autoincrement=True)
+    title = sa.Column(sa.String, nullable=False)
+    description = sa.Column(sa.Text)
+    price = sa.Column(sa.Float, nullable=False)
+    quantity = sa.Column(sa.Integer, default=0)
+    image_url = sa.Column(sa.String)
+    category = sa.Column(sa.String)
+    created_at = sa.Column(sa.DateTime, default=sa.func.now())
+    is_available = sa.Column(sa.Boolean, default=True)
