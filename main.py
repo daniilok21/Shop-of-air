@@ -294,6 +294,12 @@ def delete_product(id):
     return redirect(url_for('admin_panel'))
 
 
+@app.route('/cart')
+@login_required
+def cart():
+    return render_template('cart.html')
+
+
 if __name__ == '__main__':
     db_session.global_init("db/shop.db")
     db_sess = db_session.create_session()
