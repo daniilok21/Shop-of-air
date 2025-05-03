@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Мои заказы</h2>
+    
+    {% if not orders %}
+    <div class="alert alert-info">
+        У вас пока нет заказов
+    </div>
+    {% else %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Товар</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+                <th>Дата</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>{{ order.id }}</td>
+                <td>
+                    <a href="{{ url_for('product', id=order.product_id) }}">
+                        {{ order.product.title if order.product else 'Товар удален' }}
+                    </a>
+                </td>
+                <td>{{ order.quantity }}</td>
+                <td>{{ order.total }} ₽</td>
+                <td>{{ order.created_at.strftime('%d.%m.%Y %H:%M') if order.created_at else '' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    
+    <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">
+        Вернуться в каталог
+    </a>
+</div>
+{% endblock %}

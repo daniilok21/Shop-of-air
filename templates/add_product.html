@@ -35,23 +35,30 @@
                             <div class="form-group col-md-6">
                                 <label for="quantity">Количество</label>
                                 {{ form.quantity(class="form-control", id="quantity") }}
+                                {% for error in form.quantity.errors %}
+                                    <div class="alert alert-danger mt-2">{{ error }}</div>
+                                {% endfor %}
                             </div>
                         </div>
 
+                        <!-- Измененное поле для изображения -->
                         <div class="form-group">
                             <label for="image">Изображение товара</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="image" name="image" accept="image/*">
+                                {{ form.image(class="custom-file-input", id="image") }}
                                 <label class="custom-file-label" for="image">Выберите файл</label>
                             </div>
+                            {% for error in form.image.errors %}
+                                <div class="alert alert-danger mt-2">{{ error }}</div>
+                            {% endfor %}
                         </div>
 
                         <div class="form-group">
                             <label for="category">Категория</label>
-                            <select class="form-control" id="category" name="category">
-                                <option value="air">Воздух</option>
-                                <option value="other">Другое</option>
-                            </select>
+                            {{ form.category(class="form-control", id="category") }}
+                            {% for error in form.category.errors %}
+                                <div class="alert alert-danger mt-2">{{ error }}</div>
+                            {% endfor %}
                         </div>
 
                         <div class="form-group text-center">
@@ -70,10 +77,10 @@
 </div>
 
 <script>
+// Скрипт для отображения имени выбранного файла
 document.querySelector('.custom-file-input').addEventListener('change', function(e) {
-    var fileName = document.getElementById("image").files[0].name;
-    var nextSibling = e.target.nextElementSibling;
-    nextSibling.innerText = fileName;
+    var fileName = e.target.files[0] ? e.target.files[0].name : "Выберите файл";
+    e.target.nextElementSibling.innerText = fileName;
 });
 </script>
 {% endblock %}

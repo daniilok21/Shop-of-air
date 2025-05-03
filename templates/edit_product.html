@@ -28,13 +28,49 @@
                             <div class="form-group col-md-6">
                                 {{ form.price.label }}
                                 {{ form.price(class="form-control") }}
+                                {% for error in form.price.errors %}
+                                    <div class="alert alert-danger">{{ error }}</div>
+                                {% endfor %}
                             </div>
                             <div class="form-group col-md-6">
                                 {{ form.quantity.label }}
                                 {{ form.quantity(class="form-control") }}
+                                {% for error in form.quantity.errors %}
+                                    <div class="alert alert-danger">{{ error }}</div>
+                                {% endfor %}
                             </div>
                         </div>
-                        
+
+                        <div class="form-group">
+                            {{ form.category.label }}
+                            {{ form.category(class="form-control") }}
+                        </div>
+
+                        <!-- Измененное поле для изображения -->
+                        <div class="form-group">
+                            <label>Изображение товара</label>
+                            <div class="custom-file">
+                                {{ form.image(class="custom-file-input", id="image") }}
+                                <label class="custom-file-label" for="image">
+                                    {% if product.image_url %}
+                                        Текущее: {{ product.image_url.split('/')[-1] }}
+                                    {% else %}
+                                        Выберите новое изображение
+                                    {% endif %}
+                                </label>
+                            </div>
+                            {% for error in form.image.errors %}
+                                <div class="alert alert-danger">{{ error }}</div>
+                            {% endfor %}
+                            {% if product.image_url %}
+                            <div class="mt-2">
+                                <small>Текущее изображение:</small><br>
+                                <img src="{{ url_for('static', filename=product.image_url) }}"
+                                     class="img-thumbnail" style="max-height: 150px;">
+                            </div>
+                            {% endif %}
+                        </div>
+
                         <div class="form-group text-center">
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-save"></i> Сохранить
@@ -49,4 +85,13 @@
         </div>
     </div>
 </div>
+
+<script>
+// Скрипт для отображения имени выбранного файла
+document.querySelector('.custom-file-input').addEventListener('change', function(e) {
+    var fileName = e.target.files[0] ? e.target.files[0].name :
+                   "{% if product.image_url %}{{ product.image_url.split('/')[-1] }}{% else %}Выберите файл{% endif %}";
+    e.target.nextElementSibling.innerText = fileName;
+});
+</script>
 {% endblock %}

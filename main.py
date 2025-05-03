@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, request, abort, url_for
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
-from sqlalchemy import delete
+from sqlalchemy import delete, select
 from data import db_session
 from data.orders import Order
 from data.products import Product
@@ -24,6 +24,7 @@ logging.basicConfig(
     filename='example.log',
     format='%(asctime)s %(levelname)s %(name)s %(message)s'
 )
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -139,8 +140,24 @@ def admin_panel():
 @login_required
 def orders():
     db_sess = db_session.create_session()
-    orders = db_sess.query(Order).filter(Order.user_id == current_user.id).all()
-    return render_template("orders.html", orders=orders)
+    try:
+        orders = db_sess.execute(
+            select(Order)
+            .where(Order.user_id == current_user.id)
+            .order_by(Order.created_at.desc())
+        ).scalars().all()
+
+        for order in orders:
+            if order.product_id:
+                order.product = db_sess.get(Product, order.product_id)
+
+        return render_template("orders.html", orders=orders)
+
+    except Exception as e:
+        logging.error(f"Ошибка при получении заказов: {str(e)}")
+        abort(500)
+    finally:
+        db_sess.close()
 
 
 @app.route('/profile')
@@ -178,13 +195,15 @@ def add_product():
         abort(403)
 
     form = ProductForm()
+    form.category.choices = [('air', 'Воздух'), ('other', 'Другое')]
+
     if form.validate_on_submit():
         db_sess = db_session.create_session()
 
         image_path = None
-        if 'image' in request.files:
-            file = request.files['image']
-            if file and file.filename != '' and allowed_file(file.filename):
+        if form.image.data:
+            file = form.image.data
+            if file and allowed_file(file.filename):
                 filename = secure_filename(file.filename)
                 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
@@ -201,13 +220,7 @@ def add_product():
 
         db_sess.add(product)
         db_sess.commit()
-        logging.info(f'Товар "{product.title}" успешно добавлен!')
         return redirect(url_for('admin_panel'))
-
-    form.category.choices = [
-        ('air', 'Воздух'),
-        ('other', 'Другое')
-    ]
 
     return render_template('add_product.html', form=form)
 
@@ -219,41 +232,40 @@ def edit_product(id):
         abort(403)
 
     db_sess = db_session.create_session()
-    try:
-        # Получаем товар современным способом
-        product = db_sess.get(Product, id)
-        if not product:
-            logging.warning(f"Попытка редактирования несуществующего товара ID {id}")
-            abort(404)
+    product = db_sess.get(Product, id)
+    if not product:
+        db_sess.close()
+        abort(404)
 
-        form = ProductForm(obj=product)
+    form = ProductForm(obj=product)
+    form.category.choices = [('air', 'Воздух'), ('other', 'Другое')]
 
-        if form.validate_on_submit():
-            # Обновляем данные товара
+    if form.validate_on_submit():
+        try:
+            old_image = product.image_url
             form.populate_obj(product)
 
-            # Обработка загрузки нового изображения
-            if 'image' in request.files:
-                file = request.files['image']
-                if file and file.filename != '' and allowed_file(file.filename):
+            if form.image.data:
+                file = form.image.data
+                if file and allowed_file(file.filename):
+                    if old_image:
+                        try:
+                            os.remove(os.path.join(app.config['UPLOAD_FOLDER'], old_image.split('/')[-1]))
+                        except Exception as e:
+                            logging.error(f"Ошибка удаления изображения: {str(e)}")
                     filename = secure_filename(file.filename)
-                    os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
                     file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
                     product.image_url = f'uploads/{filename}'
 
             db_sess.commit()
-            logging.info(f"Товар ID {id} успешно обновлен")
             return redirect(url_for('admin_panel'))
+        except Exception as e:
+            db_sess.rollback()
+            logging.error(f"Ошибка сохранения товара {id}: {str(e)}")
+        finally:
+            db_sess.close()
 
-        return render_template('edit_product.html', form=form)
-
-    except Exception as e:
-        db_sess.rollback()
-        logging.error(f"Ошибка при редактировании товара ID {id}: {str(e)}")
-        abort(500)
-
-    finally:
-        db_sess.close()
+    return render_template('edit_product.html', form=form, product=product)
 
 
 @app.route('/admin/product/<int:id>/delete', methods=['POST'])
