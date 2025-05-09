@@ -1,4 +1,5 @@
-from flask import Flask, render_template, redirect, request, abort, url_for
+from datetime import datetime
+from flask import Flask, render_template, redirect, request, abort, url_for, Response, flash
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from sqlalchemy import delete, select
 from data import db_session
@@ -11,11 +12,23 @@ from forms.user import RegisterForm, LoginForm
 from werkzeug.utils import secure_filename
 import os
 import logging
+import json
+from flask_restful import Api
+from api.products import ProductsResource, ProductsListResource
+from api.orders import OrdersResource, OrdersListResource
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'gif'}
+
+api = Api(app)
+
+api.add_resource(ProductsListResource, '/api/products')
+api.add_resource(ProductsResource, '/api/products/<int:product_id>')
+
+api.add_resource(OrdersListResource, '/api/orders')
+api.add_resource(OrdersResource, '/api/orders/<int:order_id>')
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -118,7 +131,7 @@ def buy(product_id):
     db_sess.add(order)
     db_sess.commit()
 
-    return redirect('/orders')
+    return redirect(url_for('index'))
 
 
 @app.route('/admin')
@@ -141,22 +154,16 @@ def admin_panel():
 def orders():
     db_sess = db_session.create_session()
     try:
-        orders = db_sess.execute(
-            select(Order)
-            .where(Order.user_id == current_user.id)
-            .order_by(Order.created_at.desc())
-        ).scalars().all()
+        orders = db_sess.query(Order).filter(
+            Order.user_id == current_user.id
+        ).order_by(Order.created_at.desc()).all()
 
-        for order in orders:
-            if order.product_id:
-                order.product = db_sess.get(Product, order.product_id)
-
+        db_sess.close()
         return render_template("orders.html", orders=orders)
 
     except Exception as e:
         logging.error(f"Ошибка при получении заказов: {str(e)}")
         abort(500)
-    finally:
         db_sess.close()
 
 
@@ -258,11 +265,12 @@ def edit_product(id):
                     product.image_url = f'uploads/{filename}'
 
             db_sess.commit()
+            db_sess.close()
             return redirect(url_for('admin_panel'))
+
         except Exception as e:
             db_sess.rollback()
             logging.error(f"Ошибка сохранения товара {id}: {str(e)}")
-        finally:
             db_sess.close()
 
     return render_template('edit_product.html', form=form, product=product)
@@ -297,13 +305,146 @@ def delete_product(id):
 @app.route('/cart')
 @login_required
 def cart():
-    return render_template('cart.html')
-
-
-if __name__ == '__main__':
-    db_session.global_init("db/shop.db")
     db_sess = db_session.create_session()
 
+    checkout_success = request.args.get('checkout_success') == 'True'
+
+    orders = db_sess.query(Order).filter(Order.user_id == current_user.id).all()
+
+    cart_items = []
+    total_quantity = 0
+    total_amount = 0
+
+    for order in orders:
+        product = db_sess.get(Product, order.product_id)
+        if product:
+            cart_items.append({
+                'product': product,
+                'quantity': order.quantity
+            })
+            total_quantity += order.quantity
+            total_amount += order.quantity * product.price
+
+    db_sess.close()
+
+    return render_template('cart.html',
+                           cart_items=cart_items,
+                           total_quantity=total_quantity,
+                           total_amount=total_amount,
+                           checkout_success=checkout_success)
+
+
+@app.route('/cart/update', methods=['POST'])
+@login_required
+def update_cart_item():
+    product_id = int(request.form.get('product_id'))
+    action = request.form.get('action')
+    quantity = int(request.form.get('quantity', 1))
+
+    db_sess = db_session.create_session()
+    try:
+        order = db_sess.query(Order).filter(
+            Order.user_id == current_user.id,
+            Order.product_id == product_id
+        ).first()
+
+        if not order:
+            db_sess.close()
+            abort(404)
+
+        product = db_sess.get(Product, product_id)
+
+        # Обрабатываем действие (увеличение/уменьшение)
+        if action == 'increase':
+            new_quantity = quantity + 1
+        elif action == 'decrease':
+            new_quantity = quantity - 1
+        else:
+            new_quantity = quantity
+
+        # Проверяем доступное количество
+        if new_quantity < 1 or (product.quantity < new_quantity):
+            db_sess.close()
+            return redirect(url_for('cart'))
+
+        order.quantity = new_quantity
+        order.total = product.price * new_quantity
+        db_sess.commit()
+
+    except Exception as e:
+        db_sess.rollback()
+        logging.error(f"Ошибка обновления корзины: {str(e)}")
+
+    db_sess.close()
+
+    return redirect(url_for('cart'))
+
+
+@app.route('/cart/remove/<int:product_id>', methods=['POST'])
+@login_required
+def remove_cart_item(product_id):
+    db_sess = db_session.create_session()
+    try:
+        order = db_sess.query(Order).filter(
+            Order.user_id == current_user.id,
+            Order.product_id == product_id
+        ).first()
+
+        if order:
+            db_sess.delete(order)
+            db_sess.commit()
+    except Exception as e:
+        db_sess.rollback()
+        logging.error(f"Ошибка удаления из корзины: {str(e)}")
+
+    db_sess.close()
+    return redirect(url_for('cart'))
+
+
+@app.route('/cart/checkout', methods=['POST'])
+@login_required
+def checkout():
+    db_sess = db_session.create_session()
+    try:
+        cart_items = db_sess.query(Order).filter(Order.user_id == current_user.id).all()
+
+        if not cart_items:
+            logging.info('Ваша корзина пуста')
+            return redirect(url_for('cart'))
+
+        total_amount = sum(item.total for item in cart_items)
+
+        if current_user.balance < total_amount:
+            logging.error('Недостаточно средств на балансе')
+            return redirect(url_for('cart'))
+
+        for item in cart_items:
+            product = db_sess.get(Product, item.product_id)
+            if not product or product.quantity < item.quantity:
+                logging.error(f'Товар "{product.title if product else "Unknown"}" недоступен в нужном количестве')
+                return redirect(url_for('cart'))
+
+        current_user.balance -= total_amount
+
+        for item in cart_items:
+            product = db_sess.get(Product, item.product_id)
+            product.quantity -= item.quantity
+            item.status = 'completed'
+            item.created_at = datetime.now()
+
+        db_sess.commit()
+        db_sess.close()
+        return redirect(url_for('cart', checkout_success=True))
+
+    except Exception as e:
+        db_sess.rollback()
+        logging.error(f"Ошибка оформления заказа: {str(e)}")
+        db_sess.close()
+        return redirect(url_for('cart'))
+
+
+def init_all():
+    db_sess = db_session.create_session()
     if not db_sess.query(User).filter(User.email == "admin@example.com").first():
         admin = User(
             surname="Admin",
@@ -316,5 +457,14 @@ if __name__ == '__main__':
         db_sess.add(admin)
         db_sess.commit()
         logging.info("Создан администратор: admin@example.com / admin123")
+
+    db_sess.close()
+
+
+if __name__ == '__main__':
+    db_session.global_init("db/shop.db")
+    db_sess = db_session.create_session()
+
+    init_all()
 
     app.run(port=5000, debug=True)

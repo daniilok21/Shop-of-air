@@ -15,3 +15,16 @@ class Product(SqlAlchemyBase):
     category = sa.Column(sa.String)
     created_at = sa.Column(sa.DateTime, default=sa.func.now())
     is_available = sa.Column(sa.Boolean, default=True)
+
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'description': self.description,
+            'price': self.price,
+            'quantity': self.quantity,
+            'image_url': self.image_url,
+            'category': self.category,
+            'created_at': self.created_at,
+            'is_available': self.is_available
+        }

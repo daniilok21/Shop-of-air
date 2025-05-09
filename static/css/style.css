@@ -48,8 +48,6 @@
     padding: 0 20px;
 }
 
-
-
 .auth-container {
     max-width: 600px;
     margin: 0 auto;
@@ -60,4 +58,9 @@
 }
 .auth-form {
     width: 100%;
+}
+
+#cartAlert {
+    transition: all 0.3s ease;
+    max-width: 300px;
 }
