@@ -4502,3 +4502,637 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-
 2025-05-09 22:26:15,787 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:26:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-05-09 22:26:17,125 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:26:17] "GET /admin HTTP/1.1" 200 -
 2025-05-09 22:26:17,165 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:26:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:32:02,308 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-09 22:32:02,309 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-09 22:32:02,312 INFO werkzeug  * Restarting with stat
+2025-05-09 22:32:03,549 WARNING werkzeug  * Debugger is active!
+2025-05-09 22:32:03,557 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-09 22:32:10,198 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:10] "GET / HTTP/1.1" 200 -
+2025-05-09 22:32:10,344 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:32:14,714 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:14] "GET /profile HTTP/1.1" 200 -
+2025-05-09 22:32:14,765 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:32:16,622 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:16] "GET /admin HTTP/1.1" 200 -
+2025-05-09 22:32:16,666 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:32:17,667 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:17] "GET /admin/add_product HTTP/1.1" 200 -
+2025-05-09 22:32:17,719 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:32:21,561 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:21] "[32mPOST /admin/add_product HTTP/1.1[0m" 302 -
+2025-05-09 22:32:21,616 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:21] "GET /admin HTTP/1.1" 200 -
+2025-05-09 22:32:21,667 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:32:22,338 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:22] "GET / HTTP/1.1" 200 -
+2025-05-09 22:32:22,390 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:32:24,350 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:24] "POST /buy/1 HTTP/1.1" 200 -
+2025-05-09 22:32:46,015 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:46] "POST /buy/1 HTTP/1.1" 200 -
+2025-05-09 22:32:56,755 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:56] "GET /payment HTTP/1.1" 200 -
+2025-05-09 22:32:56,803 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:32:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:34:06,839 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:34:06] "GET / HTTP/1.1" 200 -
+2025-05-09 22:34:06,880 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:34:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:36:36,397 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:36] "POST /buy/1 HTTP/1.1" 200 -
+2025-05-09 22:36:40,405 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:40] "GET /payment HTTP/1.1" 200 -
+2025-05-09 22:36:40,453 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:36:43,327 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:43] "[32mPOST /payment HTTP/1.1[0m" 302 -
+2025-05-09 22:36:43,349 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:43] "GET /profile HTTP/1.1" 200 -
+2025-05-09 22:36:43,396 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:36:45,444 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:45] "GET / HTTP/1.1" 200 -
+2025-05-09 22:36:45,491 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:36:47,101 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:47] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-09 22:36:47,126 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:47] "GET / HTTP/1.1" 200 -
+2025-05-09 22:36:47,170 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:36:48,931 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:48] "GET /profile HTTP/1.1" 200 -
+2025-05-09 22:36:48,969 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:36:50,095 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:50] "GET /cart HTTP/1.1" 200 -
+2025-05-09 22:36:50,145 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:36:59,278 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:59] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:36:59,299 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:59] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:36:59,358 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:36:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:00,911 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:00] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:00,929 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:00] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:00,975 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:01,678 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:01] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:01,696 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:01] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:01,746 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:02,417 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:02] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:02,434 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:02] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:02,484 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:03,207 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:03] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:03,223 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:03] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:03,273 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:04,813 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:04] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:04,829 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:04] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:04,872 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:05,861 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:05] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:05,878 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:05] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:05,926 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:06,746 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:06] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:06,763 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:06] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:06,805 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:07,628 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:07] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:07,644 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:07] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:07,694 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:08,229 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:08] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:08,245 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:08] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:08,289 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:08,748 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:08] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:08,764 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:08] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:08,812 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:09,247 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:09] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:09,262 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:09] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:09,307 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:09,696 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:09] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:09,714 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:09] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:09,763 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:10,048 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:10,065 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:10,112 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:10,432 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:10,448 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:10,497 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:10,832 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:10,849 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:10,902 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:11,163 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:11,180 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:11,228 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:11,460 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:11,477 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:11,522 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:11,844 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:11,862 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:11,909 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:12,515 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:12] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:12,533 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:12] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-09 22:37:12,579 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:13,290 ERROR root Товар "21" недоступен в нужном количестве
+2025-05-09 22:37:13,291 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:13] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:13,311 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:13] "GET /cart HTTP/1.1" 200 -
+2025-05-09 22:37:13,359 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:14,257 ERROR root Товар "21" недоступен в нужном количестве
+2025-05-09 22:37:14,258 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:14] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:14,929 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:14] "GET /cart HTTP/1.1" 200 -
+2025-05-09 22:37:14,932 ERROR root Товар "21" недоступен в нужном количестве
+2025-05-09 22:37:14,932 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:14] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:14,949 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:14] "GET /cart HTTP/1.1" 200 -
+2025-05-09 22:37:14,984 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:16,225 ERROR root Товар "21" недоступен в нужном количестве
+2025-05-09 22:37:16,226 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:16] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:16,243 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:16] "GET /cart HTTP/1.1" 200 -
+2025-05-09 22:37:16,282 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:24,877 ERROR root Товар "21" недоступен в нужном количестве
+2025-05-09 22:37:24,877 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:24] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:24,897 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:24] "GET /cart HTTP/1.1" 200 -
+2025-05-09 22:37:24,935 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-09 22:37:25,776 ERROR root Товар "21" недоступен в нужном количестве
+2025-05-09 22:37:25,776 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:25] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-09 22:37:25,791 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:25] "GET /cart HTTP/1.1" 200 -
+2025-05-09 22:37:25,829 INFO werkzeug 127.0.0.1 - - [09/May/2025 22:37:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 15:05:23,856 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 15:05:23,857 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 15:05:23,862 INFO werkzeug  * Restarting with stat
+2025-05-10 15:05:24,943 WARNING werkzeug  * Debugger is active!
+2025-05-10 15:05:24,953 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 15:05:35,554 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:05:35] "GET / HTTP/1.1" 200 -
+2025-05-10 15:05:35,780 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:05:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 15:05:35,877 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:05:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-10 15:06:56,874 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 15:06:56,875 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 15:06:56,877 INFO werkzeug  * Restarting with stat
+2025-05-10 15:06:57,951 WARNING werkzeug  * Debugger is active!
+2025-05-10 15:06:57,957 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 15:07:00,560 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:07:00] "GET / HTTP/1.1" 200 -
+2025-05-10 15:07:00,683 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:07:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 15:07:03,739 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:07:03] "GET /login HTTP/1.1" 200 -
+2025-05-10 15:07:03,791 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:07:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 15:07:05,483 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:07:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-10 15:07:05,511 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:07:05] "GET / HTTP/1.1" 200 -
+2025-05-10 15:07:05,569 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:07:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 15:13:26,546 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\data\\__all_models.py', reloading
+2025-05-10 15:13:26,745 INFO werkzeug  * Restarting with stat
+2025-05-10 15:13:28,087 WARNING werkzeug  * Debugger is active!
+2025-05-10 15:13:28,095 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 15:14:40,900 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 15:14:40,901 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 15:14:40,903 INFO werkzeug  * Restarting with stat
+2025-05-10 15:14:42,145 WARNING werkzeug  * Debugger is active!
+2025-05-10 15:14:42,153 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 15:44:55,766 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:44:55] "GET / HTTP/1.1" 200 -
+2025-05-10 15:44:55,903 INFO werkzeug 127.0.0.1 - - [10/May/2025 15:44:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:23:37,188 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 16:23:37,336 INFO werkzeug  * Restarting with stat
+2025-05-10 16:23:39,057 WARNING werkzeug  * Debugger is active!
+2025-05-10 16:23:39,065 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 16:24:10,963 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:24:10] "GET / HTTP/1.1" 200 -
+2025-05-10 16:24:11,098 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:24:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:13,653 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 16:25:13,653 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 16:25:13,656 INFO werkzeug  * Restarting with stat
+2025-05-10 16:25:14,907 WARNING werkzeug  * Debugger is active!
+2025-05-10 16:25:14,914 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 16:25:31,998 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:31] "GET / HTTP/1.1" 200 -
+2025-05-10 16:25:32,126 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:33,531 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:33] "GET / HTTP/1.1" 200 -
+2025-05-10 16:25:33,569 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:41,325 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:41] "GET / HTTP/1.1" 200 -
+2025-05-10 16:25:41,552 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:42,619 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:42] "GET / HTTP/1.1" 200 -
+2025-05-10 16:25:42,651 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:43,314 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:43] "GET / HTTP/1.1" 200 -
+2025-05-10 16:25:43,346 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:47,399 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:47] "GET / HTTP/1.1" 200 -
+2025-05-10 16:25:47,440 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:51,507 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:51] "GET / HTTP/1.1" 200 -
+2025-05-10 16:25:51,543 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:53,777 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:53] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:25:53,832 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:25:59,459 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:59] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:25:59,496 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:25:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:41:31,947 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 16:41:31,948 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 16:41:31,951 INFO werkzeug  * Restarting with stat
+2025-05-10 16:41:33,201 WARNING werkzeug  * Debugger is active!
+2025-05-10 16:41:33,208 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 16:41:51,781 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:41:51] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:41:51,910 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:41:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:42:16,454 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:16] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:42:16,488 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:42:20,658 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:20] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:42:20,693 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:42:27,291 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:27] "GET /?q=Воздух&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:42:27,348 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:42:33,379 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:33] "GET /?q=С&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 16:42:33,432 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:42:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:42:56,806 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 16:42:56,925 INFO werkzeug  * Restarting with stat
+2025-05-10 16:42:58,132 WARNING werkzeug  * Debugger is active!
+2025-05-10 16:42:58,140 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 16:43:13,574 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 16:43:13,684 INFO werkzeug  * Restarting with stat
+2025-05-10 16:43:14,922 WARNING werkzeug  * Debugger is active!
+2025-05-10 16:43:14,930 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 16:43:15,055 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:15] "GET /?q=С&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 16:43:15,181 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:43:16,359 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:16] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:43:16,405 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:43:19,254 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:19] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 16:43:19,306 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:43:20,882 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:20] "GET /?q=Фосфор+и+его+соед&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:43:20,937 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:43:21,437 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:21] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 16:43:21,483 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:43:34,719 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:34] "GET /?q=&category=other&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 16:43:34,774 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:43:41,476 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:41] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 16:43:41,531 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 16:43:48,998 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:48] "GET /?q=&category=other&sort=none HTTP/1.1" 200 -
+2025-05-10 16:43:49,053 INFO werkzeug 127.0.0.1 - - [10/May/2025 16:43:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:00:05,438 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 20:00:05,679 INFO werkzeug  * Restarting with stat
+2025-05-10 20:00:07,425 WARNING werkzeug  * Debugger is active!
+2025-05-10 20:00:07,431 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 20:00:07,640 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:00:07] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 20:00:07,774 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:00:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:00:17,912 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 20:00:17,912 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 20:00:17,915 INFO werkzeug  * Restarting with stat
+2025-05-10 20:00:19,144 WARNING werkzeug  * Debugger is active!
+2025-05-10 20:00:19,151 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 20:00:20,303 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:00:20] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 20:00:20,428 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:00:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:00:58,957 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 20:00:58,957 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 20:00:58,959 INFO werkzeug  * Restarting with stat
+2025-05-10 20:01:00,111 WARNING werkzeug  * Debugger is active!
+2025-05-10 20:01:00,119 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 20:01:00,263 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:01:00] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 20:01:00,394 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:01:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:04:47,672 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 20:04:47,672 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 20:04:47,674 INFO werkzeug  * Restarting with stat
+2025-05-10 20:04:48,790 WARNING werkzeug  * Debugger is active!
+2025-05-10 20:04:48,797 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 20:04:48,914 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:04:48] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 20:04:49,037 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:04:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:05:02,080 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 20:05:02,193 INFO werkzeug  * Restarting with stat
+2025-05-10 20:05:03,350 WARNING werkzeug  * Debugger is active!
+2025-05-10 20:05:03,356 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 20:05:03,473 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:03] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 20:05:03,573 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:05:12,771 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:12] "GET /?q=&category=other&sort=none HTTP/1.1" 200 -
+2025-05-10 20:05:12,825 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:05:18,958 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:18] "GET / HTTP/1.1" 200 -
+2025-05-10 20:05:19,011 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:05:24,907 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:24] "GET /?q=&category=other&sort=none HTTP/1.1" 200 -
+2025-05-10 20:05:24,954 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:05:57,513 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:57] "GET /?q=&category=other&sort=none HTTP/1.1" 200 -
+2025-05-10 20:05:57,556 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:05:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:05:57,584 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 20:05:57,723 INFO werkzeug  * Restarting with stat
+2025-05-10 20:05:58,982 WARNING werkzeug  * Debugger is active!
+2025-05-10 20:05:58,990 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 20:07:27,105 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:07:27] "GET /?q=&category=other&sort=none HTTP/1.1" 200 -
+2025-05-10 20:07:27,228 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:07:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:09:00,819 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:09:00] "GET /?q=&category=other&sort=none HTTP/1.1" 200 -
+2025-05-10 20:09:00,864 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:09:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:09:05,874 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:09:05] "GET / HTTP/1.1" 200 -
+2025-05-10 20:09:05,933 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:09:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:13:20,690 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:20] "GET /?q=&category=other&sort=none HTTP/1.1" 200 -
+2025-05-10 20:13:20,740 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:13:21,748 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:21] "GET / HTTP/1.1" 200 -
+2025-05-10 20:13:21,908 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:13:23,994 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:23] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:13:24,056 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:13:30,524 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:30] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:13:30,588 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:13:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:15:49,156 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:15:49] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:15:49,201 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:15:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:16:04,387 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:16:04] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:16:04,423 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:16:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:19:03,083 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:19:03] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:19:23,010 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:19:23] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:19:23,044 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:19:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:21:36,523 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:36] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:21:36,573 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:21:41,649 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:41] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:21:41,694 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:21:46,648 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:46] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:21:46,695 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:21:51,565 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:51] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:21:51,611 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:21:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:25:16,234 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:25:16] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:25:16,280 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:25:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:26:22,145 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:26:22] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:26:22,191 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:26:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:26:53,089 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:26:53] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:26:53,135 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:26:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:26:59,127 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:26:59] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:26:59,193 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:26:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:27:28,297 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:27:28] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:27:28,342 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:27:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:27:33,193 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:27:33] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:27:33,228 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:27:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:27:49,744 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:27:49] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:27:49,788 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:27:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:28:03,503 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:03] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:28:03,555 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:28:04,477 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:04] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:28:04,511 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:28:14,264 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:14] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:28:14,308 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:28:26,399 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:26] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:28:26,446 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:28:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:29:04,312 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:04] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:29:04,318 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:04] "GET /profile HTTP/1.1" 200 -
+2025-05-10 20:29:04,335 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:04] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:29:04,337 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:04] "GET / HTTP/1.1" 200 -
+2025-05-10 20:29:04,385 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:29:10,912 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:10] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:29:10,949 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:29:33,938 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:33] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:29:33,984 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:29:42,834 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:42] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:29:42,881 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:29:45,338 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:45] "GET /profile HTTP/1.1" 200 -
+2025-05-10 20:29:45,425 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:29:49,496 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:29:52,428 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:29:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:03,032 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:03] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:03,083 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:12,128 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:12] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:12,165 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:32,861 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:32] "GET /?q=Японский&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:32,922 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:35,795 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:35] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:35,846 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:43,304 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:43] "GET /?q=Японск&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:43,398 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:46,656 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:46] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:46,702 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:48,893 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:48] "GET /?q=&category=air&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:48,954 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:52,264 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:52] "GET /?q=&category=other&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 20:30:52,322 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:30:55,929 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:55] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:30:55,991 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:30:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:33:24,200 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:33:24] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:33:24,246 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:33:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:33:53,961 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:33:53] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:33:54,007 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:33:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:34:05,497 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:34:05] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:34:05,533 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:34:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:34:12,607 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:34:12] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:34:12,642 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:34:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:34:32,498 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:34:32] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:34:32,543 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:34:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:35:11,256 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:35:11] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:35:11,300 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:35:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:35:24,615 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 20:35:24,615 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 20:35:24,618 INFO werkzeug  * Restarting with stat
+2025-05-10 20:35:25,876 WARNING werkzeug  * Debugger is active!
+2025-05-10 20:35:25,883 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 20:35:26,020 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:35:26] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:35:26,222 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:35:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:36:46,305 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:36:46] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:36:46,352 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:36:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:38:03,343 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:38:03] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:38:03,378 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:38:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:38:10,435 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:38:10] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:38:10,472 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:38:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:39:43,087 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:39:43] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:39:43,131 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:39:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:39:54,080 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:39:54] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:39:54,119 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:39:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:40:41,231 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:40:41] "[35m[1mGET /?q=&category=all&sort=price_asc HTTP/1.1[0m" 500 -
+2025-05-10 20:40:41,294 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:40:41] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:40:41,312 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:40:41] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-10 20:40:41,397 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:40:41] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=54bdpvvXAB52GVirH3z7 HTTP/1.1" 200 -
+2025-05-10 20:40:41,420 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:40:41] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-10 20:41:00,555 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:41:00] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:41:00,597 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:41:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:41:05,272 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:41:05] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:41:05,307 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:41:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:43:13,734 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:13] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:43:13,779 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:43:25,663 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:25] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:43:25,698 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:43:38,687 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:38] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:43:38,722 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:43:40,167 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:40] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:43:40,203 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:43:42,565 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:42] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:43:42,598 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:43:44,085 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:44] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:43:44,119 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:43:52,562 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:52] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:43:52,600 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:43:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:45:47,384 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:45:47] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:45:47,426 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:45:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:45:56,109 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:45:56] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:45:56,145 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:45:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:46:01,974 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:46:01] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:46:02,012 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:46:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:46:12,983 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:46:12] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:46:13,018 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:46:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:46:18,832 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:46:18] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:46:18,868 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:46:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:48:11,741 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:48:11] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:48:11,791 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:48:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:48:29,246 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:48:29] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:48:29,293 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:48:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:49:02,817 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:49:02] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:49:02,862 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:51:33,528 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:51:33] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:51:33,564 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:51:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:51:58,430 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:51:58] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:51:58,475 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:51:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:52:48,475 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:52:48] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:52:48,521 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:52:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:53:15,431 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:53:15] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:53:15,478 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:53:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:54:10,881 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:10] "[35m[1mGET /?q=&category=all&sort=price_asc HTTP/1.1[0m" 500 -
+2025-05-10 20:54:19,248 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:19] "[35m[1mGET /?q=&category=all&sort=price_asc HTTP/1.1[0m" 500 -
+2025-05-10 20:54:19,308 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:54:19,310 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-10 20:54:19,337 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=54bdpvvXAB52GVirH3z7 HTTP/1.1[0m" 304 -
+2025-05-10 20:54:19,372 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-10 20:54:21,873 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:21] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:54:21,912 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:54:33,974 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:33] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:54:34,009 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:54:52,169 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:52] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:54:52,205 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 20:54:59,332 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:59] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 20:54:59,371 INFO werkzeug 127.0.0.1 - - [10/May/2025 20:54:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:12:54,951 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:12:54] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:12:54,991 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:12:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:12:56,677 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:12:56] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:12:56,712 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:12:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:14:38,984 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:14:38] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:14:39,020 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:14:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:15:17,044 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:17] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:15:17,078 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:15:50,576 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:50] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:15:50,622 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:15:57,881 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:57] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:15:57,932 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:15:58,724 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:58] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:15:58,754 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:15:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:16:01,558 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:16:01] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:16:01,604 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:16:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:16:06,032 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:16:06] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:16:06,076 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:16:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:17:38,937 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:17:38] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:17:38,982 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:17:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:17:45,134 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:17:45] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:17:45,189 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:17:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:18:02,749 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:02] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:18:02,791 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:18:09,076 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:09] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:18:09,119 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:18:19,669 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:19] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:18:19,714 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:18:40,567 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:40] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:18:40,615 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:18:45,237 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:45] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:18:45,281 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:18:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:19:16,510 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:19:16] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:19:16,563 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:19:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:19:33,673 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:19:33] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:19:33,708 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:19:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:19:54,415 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:19:54] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:19:54,462 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:19:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:20:22,912 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 21:20:22,913 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 21:20:22,916 INFO werkzeug  * Restarting with stat
+2025-05-10 21:20:24,203 WARNING werkzeug  * Debugger is active!
+2025-05-10 21:20:24,211 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 21:20:24,344 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:20:24] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:20:25,355 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:20:25] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:20:25,567 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:20:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:20:27,876 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:20:27] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:20:27,912 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:20:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:23:05,816 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:23:05] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:23:05,852 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:23:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:23:22,937 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:23:22] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:23:22,981 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:23:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:24:08,369 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:24:08] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:24:08,415 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:24:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:25:13,902 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:13] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:25:13,939 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:25:19,992 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:19] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:25:20,037 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:25:28,486 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:28] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:25:28,531 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:25:35,436 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:35] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:25:35,470 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:25:41,702 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:41] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:25:41,737 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:25:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:26:24,500 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:26:24] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:26:24,666 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:26:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:26:30,820 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:26:30] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 21:26:30,875 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:26:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:26:33,064 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:26:33] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:26:33,124 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:26:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:27:59,642 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:27:59] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:27:59,690 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:27:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:28:24,686 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:24] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:28:24,734 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:28:25,388 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:25] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:28:25,421 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:28:46,253 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:46] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:28:46,299 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:28:51,566 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:51] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:28:51,612 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:28:54,157 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:54] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:28:54,191 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:28:59,189 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:59] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:28:59,236 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:28:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:30:04,749 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:04] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:30:04,785 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:30:17,812 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:17] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:30:17,847 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:30:27,662 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:27] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:30:27,700 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:30:30,358 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:30] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:30:30,398 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:30:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:32:47,668 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:32:47] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:32:47,710 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:32:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:33:27,537 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:33:27] "[35m[1mGET /?q=&category=all&sort=none HTTP/1.1[0m" 500 -
+2025-05-10 21:33:27,590 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:33:27] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:33:27,592 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:33:27] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-10 21:33:27,686 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:33:27] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=el5fVsy9GhVLZok25P34 HTTP/1.1" 200 -
+2025-05-10 21:33:27,728 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:33:27] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-10 21:33:36,878 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:33:36] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:33:36,918 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:33:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:35:57,229 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:35:57] "GET /?q=&category=all&sort=none HTTP/1.1" 200 -
+2025-05-10 21:35:57,264 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:35:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:44:25,574 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:44:25] "GET /?q=&category=air&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:44:25,630 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:44:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:44:27,729 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:44:27] "GET / HTTP/1.1" 200 -
+2025-05-10 21:44:27,787 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:44:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:45:31,454 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:45:31] "[35m[1mPOST /buy/9 HTTP/1.1[0m" 500 -
+2025-05-10 21:45:31,515 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:45:31] "GET /buy/9?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-10 21:45:31,516 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:45:31] "GET /buy/9?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-10 21:45:31,562 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:45:31] "GET /buy/9?__debugger__=yes&cmd=resource&f=console.png&s=el5fVsy9GhVLZok25P34 HTTP/1.1" 200 -
+2025-05-10 21:45:31,604 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:45:31] "GET /buy/9?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-10 21:46:14,373 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:46:14] "POST /buy/9 HTTP/1.1" 200 -
+2025-05-10 21:46:32,425 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:46:32] "POST /buy/9 HTTP/1.1" 200 -
+2025-05-10 21:47:06,004 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:47:06] "[32mPOST /buy/5 HTTP/1.1[0m" 302 -
+2025-05-10 21:47:06,031 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:47:06] "GET / HTTP/1.1" 200 -
+2025-05-10 21:47:06,039 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:47:06] "[35m[1mPOST /buy/9 HTTP/1.1[0m" 500 -
+2025-05-10 21:47:06,079 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:47:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:48:51,583 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 21:48:51,584 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 21:48:51,588 INFO werkzeug  * Restarting with stat
+2025-05-10 21:48:52,633 WARNING werkzeug  * Debugger is active!
+2025-05-10 21:48:52,639 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 21:48:55,804 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:55] "GET / HTTP/1.1" 200 -
+2025-05-10 21:48:55,934 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:48:56,621 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:56] "GET / HTTP/1.1" 200 -
+2025-05-10 21:48:56,655 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:48:57,276 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:57] "GET / HTTP/1.1" 200 -
+2025-05-10 21:48:57,310 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:48:57,829 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:57] "GET / HTTP/1.1" 200 -
+2025-05-10 21:48:57,862 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:48:58,391 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:58] "GET / HTTP/1.1" 200 -
+2025-05-10 21:48:58,427 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:48:58,985 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:58] "GET / HTTP/1.1" 200 -
+2025-05-10 21:48:59,020 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:48:59,555 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:59] "GET / HTTP/1.1" 200 -
+2025-05-10 21:48:59,590 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:48:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:00,052 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:00] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:00,087 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:00,635 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:00] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:00,670 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:01,140 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:01,174 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:01,634 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:01,668 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:01,795 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:01,836 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:01,950 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:01,983 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:02,110 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:02,147 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:02,291 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:02,331 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:02,612 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:02,645 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:02,765 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:02,798 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:02,927 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:02,961 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:04,765 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:04] "POST /buy/1 HTTP/1.1" 200 -
+2025-05-10 21:49:06,878 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:06] "POST /buy/2 HTTP/1.1" 200 -
+2025-05-10 21:49:09,736 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:09] "[32mPOST /buy/5 HTTP/1.1[0m" 302 -
+2025-05-10 21:49:09,750 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:09] "GET / HTTP/1.1" 200 -
+2025-05-10 21:49:09,788 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:49:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:49:31,727 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 21:49:32,105 INFO werkzeug  * Restarting with stat
+2025-05-10 21:49:33,357 WARNING werkzeug  * Debugger is active!
+2025-05-10 21:49:33,363 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 21:50:30,876 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:50:30] "GET / HTTP/1.1" 200 -
+2025-05-10 21:50:31,017 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:50:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:50:54,661 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:50:54] "GET / HTTP/1.1" 200 -
+2025-05-10 21:50:54,708 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:50:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:50:57,675 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:50:57] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-10 21:50:57,732 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:50:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:51:00,378 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:00] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 21:51:00,434 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:51:01,633 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:01] "GET / HTTP/1.1" 200 -
+2025-05-10 21:51:01,685 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:51:03,622 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:03] "GET /?q=&category=air&sort=none HTTP/1.1" 200 -
+2025-05-10 21:51:03,681 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:51:13,263 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:13] "GET /?q=&category=air&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 21:51:13,321 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

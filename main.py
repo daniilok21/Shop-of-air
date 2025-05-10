@@ -91,8 +91,33 @@ def logout():
 @app.route('/')
 def index():
     db_sess = db_session.create_session()
-    products = db_sess.query(Product).filter(Product.is_available == True).all()
-    return render_template("index.html", products=products)
+
+    search_query = request.args.get('q', '').strip()
+    category_filter = request.args.get('category', 'all')
+    sort_by = request.args.get('sort', 'none')
+
+    query = db_sess.query(Product).filter(Product.is_available == True)
+    db_sess.close()
+    if search_query:
+        query = query.filter(
+            (Product.title.ilike(f'%{search_query}%')) |
+            (Product.description.ilike(f'%{search_query}%'))
+        )
+
+    if category_filter != 'all':
+        query = query.filter(Product.category == category_filter)
+
+    if sort_by == 'price_asc':
+        query = query.order_by(Product.price.asc())
+    elif sort_by == 'price_desc':
+        query = query.order_by(Product.price.desc())
+
+    products = query.all()
+    return render_template("index.html",
+                           products=products,
+                           search_query=search_query,
+                           current_category=category_filter,
+                           current_sort=sort_by)
 
 
 @app.route('/product/<int:id>')
@@ -461,10 +486,8 @@ def init_all():
     db_sess.close()
 
 
-if __name__ == '__main__':
-    db_session.global_init("db/shop.db")
-    db_sess = db_session.create_session()
+db_session.global_init("db/shop.db")
 
-    init_all()
+init_all()
 
-    app.run(port=5000, debug=True)
+app.run(port=5000, debug=True)
