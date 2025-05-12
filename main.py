@@ -439,6 +439,8 @@ def checkout():
             user.balance -= item.total
             product.quantity -= item.quantity
             item.created_at = datetime.now()
+            db_sess.delete(item)
+
 
         db_sess.commit()
         db_sess.close()
@@ -449,7 +451,6 @@ def checkout():
         logging.error(f"Ошибка оформления заказа: {str(e)}")
         db_sess.close()
         return redirect(url_for('cart'))
-
 
 def init_all():
     db_sess = db_session.create_session()
