@@ -5136,3 +5136,447 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-
 2025-05-10 21:51:03,681 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-05-10 21:51:13,263 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:13] "GET /?q=&category=air&sort=price_desc HTTP/1.1" 200 -
 2025-05-10 21:51:13,321 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:51:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:21,887 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 21:57:22,005 INFO werkzeug  * Restarting with stat
+2025-05-10 21:57:23,656 WARNING werkzeug  * Debugger is active!
+2025-05-10 21:57:23,664 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 21:57:26,643 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:26] "[32mPOST /buy/5 HTTP/1.1[0m" 302 -
+2025-05-10 21:57:26,704 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:26] "GET / HTTP/1.1" 200 -
+2025-05-10 21:57:26,860 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:34,883 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:34] "GET /profile HTTP/1.1" 200 -
+2025-05-10 21:57:34,942 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:36,310 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:36] "GET /admin HTTP/1.1" 200 -
+2025-05-10 21:57:36,367 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:41,378 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:41] "GET / HTTP/1.1" 200 -
+2025-05-10 21:57:41,428 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:45,610 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:45] "[32mPOST /buy/5 HTTP/1.1[0m" 302 -
+2025-05-10 21:57:45,626 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:45] "GET / HTTP/1.1" 200 -
+2025-05-10 21:57:45,665 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:47,130 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:47] "[32mPOST /buy/5 HTTP/1.1[0m" 302 -
+2025-05-10 21:57:47,145 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:47] "GET / HTTP/1.1" 200 -
+2025-05-10 21:57:47,184 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:51,682 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:51] "[32mPOST /buy/5 HTTP/1.1[0m" 302 -
+2025-05-10 21:57:51,701 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:51] "GET / HTTP/1.1" 200 -
+2025-05-10 21:57:51,742 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:54,134 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:54] "GET / HTTP/1.1" 200 -
+2025-05-10 21:57:54,170 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:55,192 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:55] "GET /payment HTTP/1.1" 200 -
+2025-05-10 21:57:55,248 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:56,344 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:56] "GET /profile HTTP/1.1" 200 -
+2025-05-10 21:57:56,391 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 21:57:57,527 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:57] "GET /cart HTTP/1.1" 200 -
+2025-05-10 21:57:57,588 INFO werkzeug 127.0.0.1 - - [10/May/2025 21:57:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:00,466 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:00] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:00,487 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:00] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:00,546 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:02,866 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:02] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:02,882 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:02] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:02,932 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:04,152 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:04] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:04,168 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:04] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:04,228 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:04,767 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:04] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:04,786 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:04] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:04,837 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:05,282 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:05] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:05,298 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:05] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:05,354 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:05,815 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:05] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:05,830 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:05] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:05,880 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:08,738 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:08] "[32mPOST /cart/remove/5 HTTP/1.1[0m" 302 -
+2025-05-10 22:00:08,760 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:08] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:00:08,821 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:11,605 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:11] "[32mPOST /cart/remove/5 HTTP/1.1[0m" 302 -
+2025-05-10 22:00:11,620 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:11] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:00:11,672 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:13,228 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:13] "[32mPOST /cart/remove/5 HTTP/1.1[0m" 302 -
+2025-05-10 22:00:13,244 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:13] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:00:13,293 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:14,596 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:14] "[32mPOST /cart/remove/5 HTTP/1.1[0m" 302 -
+2025-05-10 22:00:14,612 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:14] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:00:14,665 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:15,878 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:15] "[32mPOST /cart/remove/5 HTTP/1.1[0m" 302 -
+2025-05-10 22:00:15,893 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:15] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:00:15,940 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:16,950 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:16] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:16,965 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:16] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:17,029 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:00:17,582 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:17] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:00:17,598 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:17] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:00:17,644 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:00:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:01:14,791 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:14] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-10 22:01:14,818 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:14] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:01:14,874 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:01:16,226 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:16] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-10 22:01:16,251 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:16] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:01:16,298 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:01:19,050 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:19] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-10 22:01:19,067 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:19] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:01:19,103 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:01:19,603 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:19] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:01:19,623 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:19] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:01:19,694 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:01:22,287 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:22] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:01:22,302 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:22] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:01:22,354 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:01:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:02:21,712 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:02:21,838 INFO werkzeug  * Restarting with stat
+2025-05-10 22:02:23,215 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:02:23,222 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:04:11,869 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:04:11,994 INFO werkzeug  * Restarting with stat
+2025-05-10 22:04:13,386 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:04:13,393 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:04:35,171 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:04:35,313 INFO werkzeug  * Restarting with stat
+2025-05-10 22:04:36,568 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:04:36,575 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:06:06,570 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:06:06,685 INFO werkzeug  * Restarting with stat
+2025-05-10 22:06:08,016 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:06:08,023 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:06:22,476 ERROR root Ошибка корзины: type object 'Order' has no attribute 'created_at'
+2025-05-10 22:06:22,477 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:22] "[35m[1mGET /cart?checkout_success=True HTTP/1.1[0m" 500 -
+2025-05-10 22:06:29,181 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 22:06:29,181 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 22:06:29,184 INFO werkzeug  * Restarting with stat
+2025-05-10 22:06:30,423 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:06:30,430 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:06:30,966 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:30] "GET / HTTP/1.1" 200 -
+2025-05-10 22:06:31,122 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:06:35,503 ERROR root Ошибка корзины: type object 'Order' has no attribute 'created_at'
+2025-05-10 22:06:35,504 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:35] "[32mPOST /buy/2 HTTP/1.1[0m" 302 -
+2025-05-10 22:06:35,531 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:35] "GET / HTTP/1.1" 200 -
+2025-05-10 22:06:35,581 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:06:39,123 ERROR root Ошибка корзины: type object 'Order' has no attribute 'created_at'
+2025-05-10 22:06:39,125 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:39] "[32mPOST /buy/6 HTTP/1.1[0m" 302 -
+2025-05-10 22:06:39,153 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:39] "GET / HTTP/1.1" 200 -
+2025-05-10 22:06:39,199 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:06:43,036 ERROR root Ошибка корзины: type object 'Order' has no attribute 'created_at'
+2025-05-10 22:06:43,037 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:43] "[32mPOST /buy/5 HTTP/1.1[0m" 302 -
+2025-05-10 22:06:43,052 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:43] "GET / HTTP/1.1" 200 -
+2025-05-10 22:06:43,090 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:06:47,710 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:47] "GET /profile HTTP/1.1" 200 -
+2025-05-10 22:06:47,792 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:06:48,640 ERROR root Ошибка корзины: type object 'Order' has no attribute 'created_at'
+2025-05-10 22:06:48,641 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:06:48] "[35m[1mGET /cart HTTP/1.1[0m" 500 -
+2025-05-10 22:07:05,180 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:07:05,298 INFO werkzeug  * Restarting with stat
+2025-05-10 22:07:06,371 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:07:06,378 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:07:06,500 ERROR root Ошибка корзины: 'dict object' has no attribute 'quantity'
+2025-05-10 22:07:06,501 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:07:06] "[35m[1mGET /cart HTTP/1.1[0m" 500 -
+2025-05-10 22:07:22,838 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:07:23,345 INFO werkzeug  * Restarting with stat
+2025-05-10 22:07:24,538 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:07:24,545 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:07:24,662 ERROR root Ошибка корзины: 'dict object' has no attribute 'quantity'
+2025-05-10 22:07:24,663 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:07:24] "[35m[1mGET /cart HTTP/1.1[0m" 500 -
+2025-05-10 22:07:46,267 ERROR root Ошибка корзины: 'dict object' has no attribute 'quantity'
+2025-05-10 22:07:46,268 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:07:46] "[35m[1mGET /cart HTTP/1.1[0m" 500 -
+2025-05-10 22:07:46,414 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:07:46,537 INFO werkzeug  * Restarting with stat
+2025-05-10 22:07:47,592 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:07:47,598 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:08:43,046 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:08:43,166 INFO werkzeug  * Restarting with stat
+2025-05-10 22:08:44,412 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:08:44,419 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:09:59,479 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:09:59,596 INFO werkzeug  * Restarting with stat
+2025-05-10 22:10:00,868 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:10:00,876 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:11:01,615 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:11:01,739 INFO werkzeug  * Restarting with stat
+2025-05-10 22:11:03,006 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:11:03,013 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:12:46,397 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-10 22:12:46,397 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-10 22:12:46,402 INFO werkzeug  * Restarting with stat
+2025-05-10 22:12:47,624 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:12:47,631 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:13:18,203 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:13:18,315 INFO werkzeug  * Restarting with stat
+2025-05-10 22:13:19,549 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:13:19,556 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:15:28,524 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:15:28,636 INFO werkzeug  * Restarting with stat
+2025-05-10 22:15:29,955 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:15:29,962 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:15:32,801 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:32] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:15:32,934 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:35,936 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:35] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:15:35,954 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:35] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:15:36,012 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:36,882 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:36] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:15:36,899 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:36] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:15:36,947 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:38,333 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:38] "GET / HTTP/1.1" 200 -
+2025-05-10 22:15:38,393 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:39,629 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:39] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-10 22:15:39,652 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:39] "GET / HTTP/1.1" 200 -
+2025-05-10 22:15:39,693 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:40,364 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:40] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-10 22:15:40,378 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:40] "GET / HTTP/1.1" 200 -
+2025-05-10 22:15:40,421 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:41,764 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:41] "GET /profile HTTP/1.1" 200 -
+2025-05-10 22:15:41,810 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:42,626 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:42] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:15:42,680 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:44,554 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:44] "GET / HTTP/1.1" 200 -
+2025-05-10 22:15:44,612 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:15:47,412 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:47] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-10 22:15:47,427 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:47] "GET / HTTP/1.1" 200 -
+2025-05-10 22:15:47,467 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:15:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:18:14,723 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:18:14,871 INFO werkzeug  * Restarting with stat
+2025-05-10 22:18:16,259 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:18:16,266 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:18:42,494 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:18:42,605 INFO werkzeug  * Restarting with stat
+2025-05-10 22:18:43,837 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:18:43,846 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:19:19,799 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:19] "GET / HTTP/1.1" 200 -
+2025-05-10 22:19:19,930 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:19:21,219 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:21] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-10 22:19:21,237 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:21] "GET / HTTP/1.1" 200 -
+2025-05-10 22:19:21,277 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:19:22,051 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:22] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-10 22:19:22,071 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:22] "GET / HTTP/1.1" 200 -
+2025-05-10 22:19:22,111 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:19:23,389 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:23] "GET /profile HTTP/1.1" 200 -
+2025-05-10 22:19:23,437 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:19:24,405 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:24] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:19:24,462 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:19:31,994 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:31] "[32mPOST /cart/remove/5 HTTP/1.1[0m" 302 -
+2025-05-10 22:19:32,010 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:32] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:19:32,062 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:19:34,426 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:34] "[32mPOST /cart/remove/1 HTTP/1.1[0m" 302 -
+2025-05-10 22:19:34,447 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:34] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:19:34,492 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:19:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:20:04,769 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:04] "GET /payment HTTP/1.1" 200 -
+2025-05-10 22:20:04,831 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:20:08,217 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:08] "[32mPOST /payment HTTP/1.1[0m" 302 -
+2025-05-10 22:20:08,239 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:08] "GET /profile HTTP/1.1" 200 -
+2025-05-10 22:20:08,294 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:20:09,683 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:09] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:20:09,743 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:20:12,829 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:12] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:20:12,844 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:12] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:20:12,901 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:20:16,578 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:16] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:20:16,599 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:16] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:20:16,650 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:20:17,828 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:17] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:20:17,843 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:17] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:20:17,888 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:20:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:21:09,109 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:21:09,219 INFO werkzeug  * Restarting with stat
+2025-05-10 22:21:10,591 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:21:10,598 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:21:10,722 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:21:10] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-10 22:21:10,781 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:21:10] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:21:10,923 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:21:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:21:11,551 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:21:11] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-10 22:21:11,576 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:21:11] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:21:11,621 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:21:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:22:10,443 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:22:10,560 INFO werkzeug  * Restarting with stat
+2025-05-10 22:22:11,831 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:22:11,839 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:22:11,958 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:11] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:22:12,005 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:12] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:22:12,149 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:22:15,203 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:15] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:22:15,219 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:15] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:22:15,267 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:22:17,805 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:17] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:22:17,820 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:17] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:22:17,867 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:22:20,239 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:20] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:22:20,254 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:20] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:22:20,299 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:22:50,031 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:22:50,153 INFO werkzeug  * Restarting with stat
+2025-05-10 22:22:51,411 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:22:51,418 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:22:51,539 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:51] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:22:51,585 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:51] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:22:51,722 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:22:58,177 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:22:58,297 INFO werkzeug  * Restarting with stat
+2025-05-10 22:22:59,365 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:22:59,372 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:22:59,566 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:59] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:22:59,610 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:59] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:22:59,739 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:22:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:23:00,608 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:00] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-10 22:23:00,624 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:00] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-10 22:23:00,675 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:23:05,126 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:05] "GET / HTTP/1.1" 200 -
+2025-05-10 22:23:05,185 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:23:20,112 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:20] "[32mPOST /buy/4 HTTP/1.1[0m" 302 -
+2025-05-10 22:23:20,136 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:20] "GET / HTTP/1.1" 200 -
+2025-05-10 22:23:20,177 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:23:24,215 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:24] "GET /profile HTTP/1.1" 200 -
+2025-05-10 22:23:24,271 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:23:25,143 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:25] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:23:25,205 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:23:28,026 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:28] "[32mPOST /cart/remove/4 HTTP/1.1[0m" 302 -
+2025-05-10 22:23:28,046 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:28] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:23:28,095 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:23:30,028 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:30] "[32mPOST /cart/remove/1 HTTP/1.1[0m" 302 -
+2025-05-10 22:23:30,041 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:30] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:23:30,089 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:23:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:24:00,115 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-10 22:24:00,215 INFO werkzeug  * Restarting with stat
+2025-05-10 22:24:01,485 WARNING werkzeug  * Debugger is active!
+2025-05-10 22:24:01,493 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-10 22:24:02,203 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:02] "GET / HTTP/1.1" 200 -
+2025-05-10 22:24:02,337 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:24:04,331 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:04] "[32mPOST /buy/4 HTTP/1.1[0m" 302 -
+2025-05-10 22:24:04,375 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:04] "GET /cart HTTP/1.1" 200 -
+2025-05-10 22:24:04,445 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:24:10,705 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:10] "GET / HTTP/1.1" 200 -
+2025-05-10 22:24:10,753 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-10 22:24:14,392 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:14] "GET /?q=&category=air&sort=price_desc HTTP/1.1" 200 -
+2025-05-10 22:24:14,459 INFO werkzeug 127.0.0.1 - - [10/May/2025 22:24:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 13:58:30,063 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-11 13:58:30,064 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-11 13:58:30,069 INFO werkzeug  * Restarting with stat
+2025-05-11 13:58:31,302 WARNING werkzeug  * Debugger is active!
+2025-05-11 13:58:31,312 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-11 13:58:36,759 INFO werkzeug 127.0.0.1 - - [11/May/2025 13:58:36] "GET / HTTP/1.1" 200 -
+2025-05-11 13:58:36,965 INFO werkzeug 127.0.0.1 - - [11/May/2025 13:58:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-11 13:58:37,534 INFO werkzeug 127.0.0.1 - - [11/May/2025 13:58:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-11 13:58:44,050 INFO werkzeug 127.0.0.1 - - [11/May/2025 13:58:44] "GET /?q=&category=all&sort=price_asc HTTP/1.1" 200 -
+2025-05-11 13:58:44,107 INFO werkzeug 127.0.0.1 - - [11/May/2025 13:58:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 13:58:49,536 INFO werkzeug 127.0.0.1 - - [11/May/2025 13:58:49] "GET /?q=&category=all&sort=price_desc HTTP/1.1" 200 -
+2025-05-11 13:58:49,594 INFO werkzeug 127.0.0.1 - - [11/May/2025 13:58:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 14:45:36,818 INFO werkzeug  * Detected change in 'C:\\Users\\Хохолы4\\PycharmProjects\\flask-sqlalchemy\\main.py', reloading
+2025-05-11 14:45:37,204 INFO werkzeug  * Restarting with stat
+2025-05-11 14:45:38,873 WARNING werkzeug  * Debugger is active!
+2025-05-11 14:45:38,881 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-11 17:53:28,982 INFO werkzeug 127.0.0.1 - - [11/May/2025 17:53:28] "GET / HTTP/1.1" 200 -
+2025-05-11 17:53:29,137 INFO werkzeug 127.0.0.1 - - [11/May/2025 17:53:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-11 19:42:29,318 INFO werkzeug 127.0.0.1 - - [11/May/2025 19:42:29] "GET / HTTP/1.1" 200 -
+2025-05-11 19:42:29,371 INFO werkzeug 127.0.0.1 - - [11/May/2025 19:42:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 15:43:42,667 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-12 15:43:42,667 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-12 15:43:42,671 INFO werkzeug  * Restarting with stat
+2025-05-12 15:43:43,809 WARNING werkzeug  * Debugger is active!
+2025-05-12 15:43:43,817 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-12 15:43:59,587 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:43:59] "GET / HTTP/1.1" 200 -
+2025-05-12 15:43:59,787 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:43:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 15:43:59,916 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:43:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-12 15:44:01,957 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:01] "GET /login HTTP/1.1" 200 -
+2025-05-12 15:44:02,014 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 15:44:19,668 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-05-12 15:44:19,697 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:19] "GET / HTTP/1.1" 200 -
+2025-05-12 15:44:19,754 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 15:44:21,583 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:21] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-12 15:44:21,629 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:21] "GET /cart HTTP/1.1" 200 -
+2025-05-12 15:44:21,683 INFO werkzeug 127.0.0.1 - - [12/May/2025 15:44:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:06:36,766 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:36] "[32mPOST /cart/remove/4 HTTP/1.1[0m" 302 -
+2025-05-12 16:06:36,788 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:36] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:06:36,832 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:06:37,758 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:37] "GET /payment HTTP/1.1" 200 -
+2025-05-12 16:06:37,809 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:06:40,125 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:40] "[32mPOST /payment HTTP/1.1[0m" 302 -
+2025-05-12 16:06:40,158 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:40] "GET /profile HTTP/1.1" 200 -
+2025-05-12 16:06:40,212 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:06:41,577 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:41] "GET / HTTP/1.1" 200 -
+2025-05-12 16:06:41,650 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:06:47,950 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:47] "[32mPOST /buy/2 HTTP/1.1[0m" 302 -
+2025-05-12 16:06:47,975 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:47] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:06:48,029 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:06:51,609 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:51] "[32mPOST /cart/remove/1 HTTP/1.1[0m" 302 -
+2025-05-12 16:06:51,630 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:51] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:06:51,677 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:06:52,913 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:52] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-12 16:06:52,933 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:52] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-12 16:06:52,995 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:06:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:07:12,313 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:07:12] "[32mPOST /cart/checkout HTTP/1.1[0m" 302 -
+2025-05-12 16:07:12,328 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:07:12] "GET /cart?checkout_success=True HTTP/1.1" 200 -
+2025-05-12 16:07:12,376 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:07:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:01,638 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:01] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:01,664 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:01] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:01,717 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:01,968 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:01] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:01,990 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:01] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:02,034 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:02,318 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:02] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:02,343 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:02] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:02,394 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:02,667 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:02] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:02,691 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:02] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:02,735 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:03,055 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:03,077 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:03,120 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:03,435 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:03,459 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:03,503 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:03,801 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:03,826 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:03,869 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:04,163 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:04,185 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:04,222 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:04,580 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:04,595 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:04,632 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:04,946 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:04,964 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:04] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:05,004 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:08:05,329 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:05] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:08:05,345 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:05] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:08:05,384 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:08:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:18:39,360 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:18:39] "GET / HTTP/1.1" 200 -
+2025-05-12 16:18:39,423 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:18:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:19:47,838 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:19:47] "GET /profile HTTP/1.1" 200 -
+2025-05-12 16:19:47,890 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:19:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:19:48,796 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:19:48] "GET /admin HTTP/1.1" 200 -
+2025-05-12 16:19:48,860 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:19:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:22:23,905 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:23] "GET / HTTP/1.1" 200 -
+2025-05-12 16:22:23,960 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:22:36,855 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:36] "[32mPOST /buy/1 HTTP/1.1[0m" 302 -
+2025-05-12 16:22:36,880 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:36] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:22:36,939 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:22:40,243 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:40] "[32mPOST /cart/remove/2 HTTP/1.1[0m" 302 -
+2025-05-12 16:22:40,269 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:40] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:22:40,314 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:22:41,211 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:22:41,233 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:22:41,271 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:22:41,526 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:22:41,542 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:22:41,580 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:22:41,860 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "[32mPOST /cart/update HTTP/1.1[0m" 302 -
+2025-05-12 16:22:41,875 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "GET /cart HTTP/1.1" 200 -
+2025-05-12 16:22:41,914 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:22:44,511 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:44] "GET / HTTP/1.1" 200 -
+2025-05-12 16:22:44,562 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:22:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:33:38,943 INFO werkzeug [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-12 16:33:38,944 INFO werkzeug [33mPress CTRL+C to quit[0m
+2025-05-12 16:33:38,946 INFO werkzeug  * Restarting with stat
+2025-05-12 16:33:40,168 WARNING werkzeug  * Debugger is active!
+2025-05-12 16:33:40,176 INFO werkzeug  * Debugger PIN: 188-353-019
+2025-05-12 16:33:40,343 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:40] "GET /?q=фвфыва&category=air&sort=price_desc HTTP/1.1" 200 -
+2025-05-12 16:33:40,548 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:33:43,409 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:43] "GET / HTTP/1.1" 200 -
+2025-05-12 16:33:43,463 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:33:45,793 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:45] "GET /profile HTTP/1.1" 200 -
+2025-05-12 16:33:45,841 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:33:47,075 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:47] "GET /admin HTTP/1.1" 200 -
+2025-05-12 16:33:47,122 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:33:48,878 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:48] "GET / HTTP/1.1" 200 -
+2025-05-12 16:33:48,924 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-12 16:33:49,446 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:49] "GET /payment HTTP/1.1" 200 -
+2025-05-12 16:33:49,495 INFO werkzeug 127.0.0.1 - - [12/May/2025 16:33:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -

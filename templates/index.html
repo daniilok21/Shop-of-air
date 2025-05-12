@@ -4,11 +4,9 @@
 <div class="container py-4">
     <h1 class="text-center mb-4">Каталог товаров</h1>
 
-    <!-- Блок поиска и фильтров -->
     <div class="card mb-4 shadow-sm">
         <div class="card-body">
             <form method="get" action="{{ url_for('index') }}">
-                <!-- Поле поиска с отступом снизу -->
                 <div class="mb-3">
                     <div class="input-group">
                         <span class="input-group-text bg-white">
@@ -19,28 +17,24 @@
                     </div>
                 </div>
 
-                <!-- Фильтры и кнопки в одной строке -->
+                <!-- Фильтры и кнопки -->
                 <div class="d-flex align-items-stretch gap-2" style="height: 38px;">
-                    <!-- Фильтр по категории -->
                     <select name="category" class="form-select flex-grow-1 h-100">
                         <option value="all" {% if current_category == 'all' %}selected{% endif %}>Все категории</option>
                         <option value="air" {% if current_category == 'air' %}selected{% endif %}>Воздух</option>
                         <option value="other" {% if current_category == 'other' %}selected{% endif %}>Другое</option>
                     </select>
 
-                    <!-- Сортировка -->
                     <select name="sort" class="form-select flex-grow-1 h-100">
                         <option value="none" {% if current_sort == 'none' %}selected{% endif %}>Сортировка</option>
                         <option value="price_asc" {% if current_sort == 'price_asc' %}selected{% endif %}>Цена по возростанию</option>
                         <option value="price_desc" {% if current_sort == 'price_desc' %}selected{% endif %}>Цена по убыванию</option>
                     </select>
 
-                    <!-- Кнопка Применить -->
                     <button type="submit" class="btn btn-primary h-100">
                         <i class="fas fa-search"></i> Применить
                     </button>
 
-                    <!-- Кнопка Сбросить -->
                     {% if search_query or current_category != 'all' or current_sort != 'none' %}
                     <a href="{{ url_for('index') }}" class="btn btn-outline-secondary h-100">
                         <i class="fas fa-times"></i> Сбросить

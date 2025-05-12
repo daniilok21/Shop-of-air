@@ -64,6 +64,7 @@ def register():
         user.set_password(form.password.data)
         db_sess.add(user)
         db_sess.commit()
+        db_sess.close()
         return redirect('/login')
     return render_template('register.html', form=form)
 
@@ -74,6 +75,7 @@ def login():
     if form.validate_on_submit():
         db_sess = db_session.create_session()
         user = db_sess.query(User).filter(User.email == form.email.data).first()
+        db_sess.close()
         if user and user.check_password(form.password.data):
             login_user(user, remember=form.remember_me.data)
             return redirect("/")
@@ -124,6 +126,7 @@ def index():
 def product(id):
     db_sess = db_session.create_session()
     product = db_sess.get(Product, id)
+    db_sess.close()
     if not product:
         abort(404)
     return render_template("product.html", product=product)
@@ -141,12 +144,6 @@ def buy(product_id):
 
     total = product.price * quantity
 
-    if current_user.balance < total:
-        return "Недостаточно средств"
-
-    current_user.balance -= total
-    product.quantity -= quantity
-
     order = Order(
         user_id=current_user.id,
         product_id=product.id,
@@ -156,7 +153,8 @@ def buy(product_id):
     db_sess.add(order)
     db_sess.commit()
 
-    return redirect(url_for('index'))
+    return redirect(url_for('cart'
+                            ''))
 
 
 @app.route('/admin')
@@ -168,28 +166,10 @@ def admin_panel():
     db_sess = db_session.create_session()
     users = db_sess.query(User).all()
     products = db_sess.query(Product).all()
-
+    db_sess.close()
     return render_template('admin_panel.html',
                            users=users,
                            products=products)
-
-
-@app.route('/orders')
-@login_required
-def orders():
-    db_sess = db_session.create_session()
-    try:
-        orders = db_sess.query(Order).filter(
-            Order.user_id == current_user.id
-        ).order_by(Order.created_at.desc()).all()
-
-        db_sess.close()
-        return render_template("orders.html", orders=orders)
-
-    except Exception as e:
-        logging.error(f"Ошибка при получении заказов: {str(e)}")
-        abort(500)
-        db_sess.close()
 
 
 @app.route('/profile')
@@ -210,6 +190,7 @@ def payment():
             db_sess = db_session.create_session()
             db_sess.merge(current_user)
             db_sess.commit()
+            db_sess.close()
             logging.info(f"Пополнение баланса пользователем {current_user.email} на {amount} р.")
             return redirect('/profile')
 
@@ -252,6 +233,7 @@ def add_product():
 
         db_sess.add(product)
         db_sess.commit()
+        db_sess.close()
         return redirect(url_for('admin_panel'))
 
     return render_template('add_product.html', form=form)
@@ -379,7 +361,7 @@ def update_cart_item():
 
         product = db_sess.get(Product, product_id)
 
-        # Обрабатываем действие (увеличение/уменьшение)
+        # увеличение/уменьшение
         if action == 'increase':
             new_quantity = quantity + 1
         elif action == 'decrease':
@@ -387,7 +369,7 @@ def update_cart_item():
         else:
             new_quantity = quantity
 
-        # Проверяем доступное количество
+        # доступное количество
         if new_quantity < 1 or (product.quantity < new_quantity):
             db_sess.close()
             return redirect(url_for('cart'))
@@ -452,9 +434,10 @@ def checkout():
         current_user.balance -= total_amount
 
         for item in cart_items:
+            user = db_sess.get(User, item.user_id)
             product = db_sess.get(Product, item.product_id)
+            user.balance -= item.total
             product.quantity -= item.quantity
-            item.status = 'completed'
             item.created_at = datetime.now()
 
         db_sess.commit()
