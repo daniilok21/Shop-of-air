@@ -16,6 +16,7 @@ import json
 from flask_restful import Api
 from api.products import ProductsResource, ProductsListResource
 from api.orders import OrdersResource, OrdersListResource
+from api.users import UsersResource, UsersListResource
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
@@ -29,6 +30,9 @@ api.add_resource(ProductsResource, '/api/products/<int:product_id>')
 
 api.add_resource(OrdersListResource, '/api/orders')
 api.add_resource(OrdersResource, '/api/orders/<int:order_id>')
+
+api.add_resource(UsersListResource, '/api/users')
+api.add_resource(UsersResource, '/api/users/<int:user_id>')
 
 login_manager = LoginManager()
 login_manager.init_app(app)

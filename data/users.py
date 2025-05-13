@@ -20,3 +20,16 @@ class User(SqlAlchemyBase, UserMixin):
 
     def check_password(self, password):
         return check_password_hash(self.hashed_password, password)
+
+    def to_dict(self, only=()):
+        fields = {
+            'id': self.id,
+            'surname': self.surname,
+            'name': self.name,
+            'email': self.email,
+            'balance': self.balance,
+            'is_admin': self.is_admin
+        }
+        if only:
+            return {key: fields[key] for key in only}
+        return fields
